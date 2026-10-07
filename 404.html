@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8">
+<title>MAHALCO</title>
+<meta name="robots" content="noindex">
+<script>
+/* Any address that isn't one of the root copies is served from the full site under /mahalco/ */
+(function () {
+  var p = location.pathname;
+  if (p.indexOf('/mahalco/') === 0) return;
+  location.replace('/mahalco' + p + location.search + location.hash);
+})();
+</script>
+</head><body><a href="/mahalco/">MAHALCO</a></body></html>

@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2151829492004511"
+     crossorigin="anonymous"></script>
+    <!-- Clarity tracking code for https://mahmoudalem95.github.io/mahalco/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        try{if(localStorage.getItem('mh-owner')==='1')return}catch(e){}
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yhq6a92ouj");
+</script>
+    <script src="https://app.secureprivacy.ai/script/6a9ea3e9610163e1a700488f.js"></script>
+    <!-- Google tag (../gtag.js) -->
+    <script>try{if(localStorage.getItem('mh-owner')==='1')window['ga-disable-G-HGFLQEM5HT']=true}catch(e){}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGFLQEM5HT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-HGFLQEM5HT');
+    </script>
+
+    <link rel="canonical" href="https://mahmoudalem95.github.io/mahalco/ar/index.html">
+    <link rel="alternate" hreflang="ar-AE" href="https://mahmoudalem95.github.io/mahalco/ar/index.html">
+    <link rel="alternate" hreflang="he" href="https://mahmoudalem95.github.io/mahalco/">
+    <link rel="alternate" hreflang="en" href="https://mahmoudalem95.github.io/mahalco/en/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://mahmoudalem95.github.io/mahalco/">
+    <meta charset="UTF-8">
+<base href="https://mahmoudalem95.github.io/mahalco/ar/">
+<script>/* root copy: in-page #links stay on this page despite <base> */document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;var h=a.getAttribute('href');if(h.length<2)return;e.preventDefault();if(location.hash!==h)history.pushState(null,'',location.pathname+location.search+h);var t=document.getElementById(decodeURIComponent(h.slice(1)));if(t)t.scrollIntoView();window.dispatchEvent(new HashChangeEvent('hashchange'));},true);</script>
+<meta name="mahalco-origin" content="MahAlCo | https://mahmoudalem95.github.io/mahalco/ar/index.html | all rights reserved">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>أدوات وواجهات API لهندسة المرور | MAHALCO</title>
+    <meta name="description" content="أدوات وواجهات API لهندسة المرور لتحليل التقاطعات ومستوى الخدمة والصفوف والتصميم الهندسي والسلامة والنقل العام والمواقف.">
+    <meta property="og:title" content="MahAlCo — واجهات برمجية لهندسة النقل">
+    <meta property="og:description" content="أربعة وخمسون إجراءً لهندسة المرور والنقل: تحليل التقاطعات، تصميم الطرق، المقاطع النموذجية، إرشادات الإشارات، الحواجز، الإرشاد — متوافق مع إرشادات هيئات الطرق الإماراتية.">
+    <meta property="og:url" content="https://mahmoudalem95.github.io/mahalco/ar/index.html">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AE">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "MahAlCo",
+            "operatingSystem": "Web Browser",
+            "applicationCategory": "EngineeringApplication",
+            "description": "أربعة وخمسون إجراءً لهندسة النقل حسب HCM وAASHTO وHSM — تشمل تحليل التقاطعات، الطرق السريعة، التصميم الهندسي، والسلامة.",
+            "offers": [
+                { "@type": "Offer", "name": "مطورون", "price": "19", "priceCurrency": "USD",
+                  "eligibleQuantity": { "@type": "QuantitativeValue", "value": "120 requests per hour" } },
+                { "@type": "Offer", "name": "مكتب", "price": "79", "priceCurrency": "USD",
+                  "eligibleQuantity": { "@type": "QuantitativeValue", "value": "600 requests per hour" } }
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "كيف يُحسب الحجم الحرج للمسار في تقاطع بإشارة ضوئية؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "يُقسَّم كل مدخل إلى مجموعات مسارات، ويُحسب الحجم لكل مسار لكل حركة، ثم تُختار لكل مرحلة مجموعة المسارات الأكثر ازدحاماً. مجموع القيم الحرجة لجميع المراحل هو الحجم الحرج للتقاطع. حاسبة الحجم الحرج تُشغّل ثلاث طرق للمراحل بالتوازي — مداخل مقسّمة، فصل الانعطاف لليسار، ومرحلة ممتدة — وتختار الأقل بينها."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "هل يمكن تحميل ملف عدّ الحركة مباشرة إلى الحساب؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "نعم. يتم تحميل ملف XLSX من جهة العدّ؛ تقوم الأداة بتحديد الجدول 2.4 (أو 2.2، 2.3، 2.1)، وبناء الملف الساعي، وعرض أحجام ساعة الذروة على مخطط التقاطع وإدخالها إلى الحساب. إذا كان هيكل الملف مختلفاً، يمكن لصق خلايا الجدول مباشرة من إكسل."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "كيف يُحدَّد معيار المواقف للعقار؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "حسب اشتراطات البلدية المعنية — بدالة على الاستخدام، أو المساحة، أو عدد الوحدات، ونوع المدينة ومنطقة النقل العام فيها. في حاسبة المواقف يُدخَل اسم المدينة ونوعها، فتُحدَّد منطقة النقل العام والمنطقة الإدارية تلقائياً، مع إمكانية التجاوز اليدوي. النتيجة هي حساب حسب الاشتراطات ولا تُغني عن قرار جهة الترخيص."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "كيف يُحسب مستوى الخدمة لسنة هدف مستقبلية؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "تُرفع جميع الحركات بمعدل نمو سنوي بفائدة مركّبة، ثم تُعاد سلسلة الحساب كاملة — الحجم الحرج، طول الدورة، توزيع الأخضر، والتأخير — ولا يُضرب التأخير بمعدل النمو. التأخير غير خطي مع الحجم، لذا فإن الضرب المباشر مضلّل خصوصاً حول نسبة الطلب/السعة 1.0."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "هل تُغني النتائج عن ملحق مروري موقّع؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "لا. تُجري الأدوات الحساب حسب المعيار وتعرض خطوات الحل، بحيث يمكن فحصها. أما الملحق المروري، أو تقرير الأثر المروري، أو تقرير السلامة فيتطلب مهندس مرور معتمداً يتحمل المسؤولية المهنية عن الافتراضات والنتائج."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "حسب أي معيار تعمل الأدوات؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "‏HCM للسعة ومستوى الخدمة والتأخير والصفوف؛ AASHTO Green Book للتصميم الهندسي؛ HSM للسلامة. وحيث يوجد إرشاد إماراتي إلزامي — اشتراطات المواقف، أدلة تصميم الشوارع الحضرية، أدلة تصميم الطرق بين المدن، وأدلة الدوارات — تعمل الأداة وفقه وتذكر ذلك."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "هل أحتاج إلى تثبيت برنامج أو رفع ملفات إلى خادم؟",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "لا. جميع الأدوات تعمل في المتصفح، بما في ذلك قراءة ملف إكسل والتعليم على المخطط. يمكن إضافة الموقع إلى الشاشة الرئيسية واستخدامه كتطبيق. الواجهة البرمجية موجودة بشكل منفصل وتستهدف من يريد دمج الحسابات في أنظمة المكتب."
+                        }
+                }
+        ]
+}
+    </script>
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="theme-color" content="#23272C">
+    <meta name="color-scheme" content="dark light">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MahAlCo">
+    <meta name="application-name" content="MahAlCo">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../icon-512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --asphalt: #23272C;
+            --ink: #141A1F;
+            --paper: #E7E8E3;
+            --paper-2: #F1F2EE;
+            --marking: #E9B12F;
+            --rule: #C6C9C1;
+            --rule-dark: #39404A;
+            --muted: #5C6570;
+            --muted-dark: #9BA4AE;
+            --alert: #B22D20;
+            --alert-ink: #8A2318;
+            --measure: 66ch;
+        }
+
+        .pending-route { cursor: default !important; opacity: .72; }
+        .pending-route::after { content: " — قيد الإنشاء"; font-size: .78em; font-weight: 600; color: var(--alert-ink); }
+        .pending-route:hover { text-decoration: none !important; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100% }
+        @media (prefers-reduced-motion:reduce) { html { scroll-behavior: auto } * { transition: none !important; animation: none !important } }
+        body { margin:0; background: var(--paper); color: var(--ink); font-family: 'Cairo', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; user-select: none; -webkit-user-select: none }
+        input, textarea, select, code, .std, .connect-area code { user-select: text; -webkit-user-select: text }
+        a { color: inherit }
+        :focus-visible { outline: 2px solid var(--marking); outline-offset: 3px }
+
+        .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 28px }
+        @media (max-width: 480px) { .wrap { padding: 0 16px } }
+
+        .grid { display: grid; grid-template-columns: 1fr; gap: 16px }
+        @media (min-width: 600px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+        @media (min-width: 900px) { .grid { grid-template-columns: repeat(3, minmax(0,1fr)) } }
+
+        #main-content { display: block; }
+        .masthead { position: sticky; top: 0; z-index: 20; background: var(--asphalt); border-bottom: 1px solid var(--rule-dark) }
+        .masthead .wrap { display: flex; align-items: center; gap: 24px; height: 60px }
+        .mark { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.01em; font-size: 19px; color: var(--paper); text-decoration: none }
+        .mark span { width: 22px; height: 10px; border-radius: 2px; background: repeating-linear-gradient(90deg, var(--marking) 0 7px, transparent 7px 12px) }
+        .masthead nav { margin-inline-start: auto; display: flex; gap: 20px; font-size: 14.5px }
+        .masthead nav a { color: var(--muted-dark); text-decoration: none; padding: 4px 0 }
+        .masthead nav a:hover { color: var(--paper) }
+        .masthead nav a.btn-solid { min-height: 34px; padding: 6px 16px; font-size: 13.5px; margin-inline-end: 4px; color: var(--ink) }
+        .masthead nav a.btn-solid:hover { color: var(--ink) }
+        @media (max-width:860px) {
+            .masthead .wrap { gap: 12px }
+            .masthead nav { margin-inline-start: auto; display: flex; gap: 16px; overflow-x: auto;
+                -webkit-overflow-scrolling: touch; scrollbar-width: none; white-space: nowrap;
+                max-width: 100%; padding-bottom: 2px }
+            .masthead nav::-webkit-scrollbar { display: none }
+            .masthead nav a { flex: none; font-size: 13.5px }
+        }
+
+        .hero { background: var(--asphalt); color: var(--paper); padding: 58px 0 62px }
+        .hero .wrap { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: center }
+        @media (min-width: 900px) { .hero .wrap { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 48px } }
+        .hero h1 { margin: 0 0 18px; font-size: clamp(2.1rem, 4.6vw, 3.3rem); line-height: 1.12; letter-spacing: -.02em; font-weight: 800 }
+        .hero p { margin: 0 0 24px; max-width: 48ch; color: var(--muted-dark); font-size: 1.02rem }
+
+        .app-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+        .app-cta {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex: 0 1 auto;
+            padding: 12px 16px;
+            background: linear-gradient(90deg, rgba(233,177,47,.20), rgba(233,177,47,.05));
+            border: 1px solid var(--marking);
+            border-radius: 6px;
+            box-shadow: 0 0 0 3px rgba(233,177,47,.10);
+            text-decoration: none;
+            color: var(--paper);
+            transition: background .15s ease, box-shadow .15s ease, transform .15s ease;
+            cursor: pointer;
+            font-family: inherit;
+            text-align: right;
+            max-width: 100%;
+        }
+        .app-cta:hover, .app-cta:focus-visible { background: rgba(233,177,47,.26); box-shadow: 0 0 0 4px rgba(233,177,47,.18) }
+        .app-cta:active { transform: translateY(1px) }
+        .app-cta-badge { flex: none; background: var(--marking); color: var(--ink); font-size: 12px; font-weight: 800; letter-spacing: .02em; padding: 4px 9px; border-radius: 3px }
+        .app-cta-text { display: flex; flex-direction: column; line-height: 1.35; min-width: 0 }
+        .app-cta-text b { font-size: 15.5px; font-weight: 800 }
+        .app-cta-text span { font-size: 13px; color: var(--muted-dark) }
+        .app-cta-go { flex: none; margin-inline-start: auto; font-size: 20px; line-height: 1; color: var(--marking) }
+        @media (max-width: 599px) { .app-actions { flex-direction: column; } .app-cta { width: 100%; } }
+
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 10px }
+        @media (max-width: 599px) {
+            .hero-actions { flex-direction: column; align-items: stretch }
+            .hero-actions .btn { width: 100% }
+        }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 22px; border-radius: 3px; font-weight: 600; font-size: 14.5px; text-decoration: none; transition: background .15s ease, color .15s ease }
+        .btn-solid { background: var(--marking); color: var(--ink) }
+        .btn-solid:hover { background: #F3C455 }
+        .btn-line { border: 1px solid var(--rule-dark); color: var(--paper) }
+        .btn-line:hover { background: #2C3239 }
+
+        .plan { width: 100%; height: auto; display: block; max-width: 320px; margin: 0 auto }
+        @media (min-width: 900px) { .plan { max-width: none; margin: 0 } }
+
+        .tally { display: flex; flex-wrap: wrap; gap: 20px 34px; margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--rule-dark) }
+        .tally div { font-size: 13.5px; color: var(--muted-dark) }
+        .tally b { display: block; font-size: 1.5rem; font-weight: 800; color: var(--paper); letter-spacing: -.01em; line-height: 1.3 }
+
+        .gates { background: var(--paper-2); border-bottom: 1px solid var(--rule); padding: 26px 0 }
+        .gates .wrap { gap: 14px }
+        .gate { display: block; text-decoration: none; background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 16px 18px 15px; position: relative; overflow: hidden; transition: border-color .15s ease, transform .15s ease }
+        .gate::before { content: ""; position: absolute; inset-inline-start: 0; top: 0; bottom: 0; width: 4px; background: var(--marking); transform: scaleY(0); transform-origin: top; transition: transform .18s ease }
+        .gate:hover { border-color: var(--muted) }
+        .gate:hover::before, .gate:focus-visible::before { transform: scaleY(1) }
+        .gate h3 { margin: 0 0 4px; font-size: 1.08rem; font-weight: 800; letter-spacing: -.01em }
+        .gate p { margin: 0 0 10px; font-size: 14px; color: var(--muted); line-height: 1.5 }
+        .gate .g-n { font-size: 13px; font-weight: 600; color: var(--ink) }
+        .gate .g-n b { color: var(--marking); -webkit-text-stroke: .4px var(--ink) }
+
+        .controls { position: sticky; top: 60px; z-index: 15; background: var(--paper); border-bottom: 1px solid var(--rule); padding: 14px 0 }
+        .controls .wrap { display: flex; flex-wrap: wrap; gap: 12px; align-items: center }
+        .search { flex: 1 1 240px; min-width: 0; display: flex; align-items: center; gap: 9px; background: var(--paper-2); border: 1px solid var(--rule); border-radius: 3px; padding: 9px 13px }
+        .search svg { flex: none; opacity: .5 }
+        .search input { border: 0; background: none; outline: none; width: 100%; font: inherit; font-size: 15px; color: var(--ink) }
+        .filters { display: flex; gap: 7px; flex-wrap: wrap }
+        .chip { display: inline-flex; align-items: center; min-height: 40px; border: 1px solid var(--rule); background: transparent; border-radius: 3px; padding: 8px 14px; font: inherit; font-size: 13.5px; font-weight: 500; color: var(--muted); cursor: pointer; transition: border-color .15s, color .15s }
+        .chip:hover { border-color: var(--muted); color: var(--ink) }
+        .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper) }
+        .count { font-size: 13.5px; color: var(--muted); margin-inline-start: auto; flex: none }
+        @media (max-width:640px) { .count { margin-inline-start: 0; width: 100% } }
+
+        main { padding: 0 0 70px }
+        .tree { padding-top: 30px }
+        .branch { border: 1px solid var(--rule); border-radius: 4px; background: var(--paper-2); margin-bottom: 12px; overflow: hidden }
+        .branch[open] { background: var(--paper); border-color: var(--muted) }
+        .branch>summary, .twig>summary { cursor: pointer; list-style: none; user-select: none }
+        .branch>summary::-webkit-details-marker, .twig>summary::-webkit-details-marker { display: none }
+        .branch>summary { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-inline-start: 4px solid transparent; transition: border-color .15s ease }
+        .branch[open]>summary { border-inline-start-color: var(--marking); border-bottom: 1px solid var(--rule) }
+        .branch>summary:hover { background: #eceee8 }
+        .arrow { flex: none; width: 12px; height: 12px; border-inline-start: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .18s ease; margin-top: -4px }
+        .branch[open]>summary .arrow { transform: rotate(135deg); margin-top: 2px }
+        .b-title { font-size: 1.18rem; font-weight: 800; letter-spacing: -.01em }
+        .b-sub { font-size: 14px; color: var(--muted); flex: 1 1 auto }
+        .b-n { font-size: 13px; color: var(--muted); flex: none; white-space: nowrap }
+        .b-n b { color: var(--ink); font-weight: 700 }
+        @media (max-width:720px) { .branch>summary { flex-wrap: wrap; gap: 6px 12px } .b-sub { flex: 1 1 100%; order: 3 } .b-n { margin-inline-start: auto } }
+        .twigs { padding: 6px 18px 14px }
+        .twig { border-bottom: 1px solid var(--rule) }
+        .twig:last-child { border-bottom: 0 }
+        .twig>summary { display: flex; align-items: center; gap: 10px; padding: 12px 4px; font-size: .98rem; font-weight: 600; color: var(--ink) }
+        .twig>summary:hover { color: #000 }
+        .twig>summary .arrow { width: 9px; height: 9px }
+        .t-n { margin-inline-start: auto; font-size: 12.5px; font-weight: 500; color: var(--muted); border: 1px solid var(--rule); border-radius: 20px; padding: 1px 9px }
+        .leaves { padding: 0 0 10px }
+        a.leaf { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) minmax(0, 11rem); gap: 18px; align-items: baseline; padding: 11px 0 11px 0; padding-inline-start: 16px; text-decoration: none; color: inherit; position: relative; border-top: 1px solid var(--rule) }
+        a.leaf::before { content: ""; position: absolute; inset-inline-start: 0; top: 9px; bottom: 9px; width: 3px; background: var(--marking); transform: scaleY(0); transform-origin: top; transition: transform .18s ease }
+        a.leaf:hover::before, a.leaf:focus-visible::before { transform: scaleY(1) }
+        a.leaf:hover h3 { text-decoration: underline; text-underline-offset: 3px }
+        .leaf h3 { margin: 0; font-size: .99rem; font-weight: 600; letter-spacing: -.005em }
+        .leaf p { margin: 0; color: var(--muted); font-size: 14.5px; max-width: var(--measure) }
+        .std { font-size: 12.5px; color: var(--muted); text-align: left; direction: ltr; unicode-bidi: isolate; font-variant-numeric: tabular-nums }
+        .leaf .tool-flag { display: inline-block; font-size: 11px; font-weight: 700; color: var(--ink); background: var(--marking); border-radius: 2px; padding: 1px 6px; margin-inline-start: 7px; vertical-align: middle }
+        @media (max-width:820px) { a.leaf { grid-template-columns: 1fr; gap: 4px; padding-inline-start: 14px } .std { text-align: right; direction: rtl } }
+        .block { padding-top: 52px }
+        .block-head { display: flex; align-items: baseline; gap: 14px; padding-bottom: 12px; margin-bottom: 4px; border-bottom: 2px solid var(--ink) }
+        .block-head h2 { margin: 0; font-size: 1.5rem; font-weight: 800; letter-spacing: -.01em }
+        .block-head p { margin: 0; color: var(--muted); font-size: 14.5px; max-width: 52ch }
+        .block-head .n { margin-inline-start: auto; font-size: 13.5px; color: var(--muted); flex: none }
+        @media (max-width:720px) { .block-head { flex-wrap: wrap; gap: 6px } .block-head .n { margin-inline-start: 0; width: 100% } }
+        .tier { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 11rem) minmax(0, 10rem); gap: 20px; align-items: center; padding: 20px 0; padding-inline-start: 16px; border-bottom: 1px solid var(--rule) }
+        .tier h3 { margin: 0 0 3px; font-size: 1.02rem; font-weight: 600 }
+        .tier p { margin: 0; color: var(--muted); font-size: 14.5px; max-width: 52ch }
+        .rate { font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums }
+        .price { font-size: 1rem; font-weight: 600; justify-self: end; text-align: left; text-decoration: none }
+        a.buy { background: var(--marking); color: var(--ink); padding: 10px 18px; border-radius: 3px; transition: background .15s ease }
+        a.buy:hover { background: #F3C455 }
+        .note { margin: 18px 0 0; color: var(--muted); font-size: 13.5px; max-width: 62ch }
+        @media (max-width:820px) { .tier { grid-template-columns: 1fr; gap: 9px; padding-inline-start: 14px } .price { justify-self: start; text-align: right } }
+        .soon { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) minmax(0, 11rem); gap: 18px; align-items: baseline; padding: 14px 0; padding-inline-start: 16px; border-bottom: 1px solid var(--rule); opacity: .75 }
+        .soon h3 { margin: 0; font-size: .99rem; font-weight: 600 }
+        .soon p { margin: 0; color: var(--muted); font-size: 14.5px }
+        @media (max-width:820px) { .soon { grid-template-columns: 1fr; gap: 4px } }
+        .empty { padding: 44px 0; color: var(--muted); font-size: 16px }
+        .empty[hidden] { display: none }
+        .connect-area { padding: 18px 0 }
+        .connect-area .input-group { display: flex; gap: 10px; align-items: center; flex-wrap: wrap }
+        .connect-area .input-group label { font-weight: 600; color: var(--muted); font-size: 14.5px }
+        .connect-area .input-group input { flex: 1; min-width: 200px; padding: 10px 13px; border: 1px solid var(--rule); border-radius: 3px; font-family: inherit; background: var(--paper-2); color: var(--ink) }
+        .connect-area .input-group button { background: var(--marking); color: var(--ink); border: none; min-height: 44px; padding: 10px 20px; border-radius: 3px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background .15s ease }
+        .connect-area .input-group button:hover { background: #F3C455 }
+        @media (max-width: 599px) { .connect-area .input-group input { min-width: 0; flex: 1 1 100% } .connect-area .input-group button { width: 100% } }
+        .connect-area .hint { color: var(--muted); font-size: 13.5px; margin: 8px 0 0 }
+        .connect-area .hint a { color: #8a6a12; text-decoration: underline }
+        .connect-area .code-sample { background: var(--paper-2); padding: 14px 18px; border-radius: 4px; border-inline-end: 4px solid var(--marking); margin-top: 12px }
+        .connect-area .code-sample p { margin: 0; font-size: 13.5px; color: var(--muted) }
+        .connect-area .code-sample code { background: var(--rule); padding: 2px 7px; border-radius: 3px; font-family: monospace; word-break: break-all; direction: ltr; display: inline-block; font-size: 12.5px }
+        .connect-msg { margin: 10px 0 0; font-size: 13.5px; font-weight: 600 }
+        .keywords { margin-top: 46px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper-2) }
+        .keywords>summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; padding: 12px 16px; font-size: .95rem; font-weight: 600; color: var(--ink) }
+        .keywords>summary::-webkit-details-marker { display: none }
+        .keywords[open]>summary { border-bottom: 1px solid var(--rule) }
+        .keywords .kw-hint { margin-inline-start: auto; font-size: 12.5px; font-weight: 400; color: var(--muted) }
+        .kw-body { padding: 12px 16px 16px }
+        .kw-body>p { margin: 0 0 10px; font-size: 13.5px; color: var(--muted) }
+        .keyword-cat { display: block; margin: 12px 0 4px; font-size: .82rem; font-weight: 700; color: var(--ink) }
+        .keyword-cat:first-of-type { margin-top: 0 }
+        .tag { display: inline-block; background: #fff; padding: 1px 8px; margin: 2px 1px; border-radius: 20px; border: 1px solid var(--rule); font-size: .71rem; line-height: 1.7; color: #2c3540; white-space: nowrap }
+        .tag-soft { border-color: #9fb4cc; background: #eef3f9 }
+        .tag-agency { border-color: #bfae8b; background: #f6f2ea }
+        .tag-guideline { border-color: #93b89c; background: #eef5f0 }
+        .tag-geo { border-color: #c99e9e; background: #f7efef }
+        .tag-project { border-color: #c9a98b; background: #f7f1ea }
+        .tag-plan { border-color: #a3b0cb; background: #eff2f7 }
+        footer { background: var(--asphalt); color: var(--muted-dark); padding: 34px 0 28px; font-size: 13.5px; margin-top: 10px }
+        footer .f-grid { display: grid; grid-template-columns: 1fr; gap: 22px; align-items: start }
+        @media (min-width: 600px) { footer .f-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px } }
+        @media (min-width: 900px) { footer .f-grid { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 28px } }
+        footer h4 { margin: 0 0 8px; font-size: 13px; font-weight: 700; color: var(--paper); letter-spacing: .01em }
+        footer p { margin: 0; max-width: 52ch; line-height: 1.65 }
+        footer ul { margin: 0; padding: 0; list-style: none }
+        footer li { margin-bottom: 5px }
+        footer a { color: var(--muted-dark); text-decoration: none; border-bottom: 1px solid transparent }
+        footer a:hover { color: var(--paper); border-bottom-color: var(--marking) }
+        footer .pay-link { color: var(--paper); font-weight: 600 }
+        .f-bottom { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--rule-dark); font-size: 13px }
+        .f-bottom .who { color: var(--paper); font-weight: 600; margin-inline-start: auto }
+        @media (max-width:820px) { .f-bottom .who { margin-inline-start: 0; width: 100% } }
+
+        dialog.install-dialog {
+            border: none;
+            border-radius: 12px;
+            padding: 0;
+            max-width: 520px;
+            width: 92%;
+            box-shadow: 0 24px 48px rgba(0,0,0,.25);
+            background: #f8f9fa;
+            color: var(--ink);
+            font-family: inherit;
+        }
+        dialog.install-dialog::backdrop {
+            background: rgba(20,26,31,.75);
+            backdrop-filter: blur(2px);
+        }
+        .install-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--rule);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border-radius: 12px 12px 0 0;
+        }
+        .install-header h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+        .install-close {
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--muted);
+            line-height: 1;
+            padding: 0 4px;
+        }
+        .install-close:hover { color: var(--ink); }
+        .install-body {
+            padding: 24px;
+        }
+        .install-intro {
+            margin: 0 0 20px;
+            font-size: 14.5px;
+            color: var(--muted);
+        }
+        .platform-block {
+            margin-bottom: 28px;
+        }
+        .platform-block:last-child {
+            margin-bottom: 0;
+        }
+        .platform-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            background: var(--rule);
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            color: var(--ink);
+        }
+        .install-step {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 16px;
+            align-items: flex-start;
+        }
+        .install-step:last-child {
+            margin-bottom: 0;
+        }
+        .step-num {
+            background: var(--marking);
+            color: var(--ink);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 14px;
+            flex: none;
+            margin-top: 2px;
+        }
+        .step-text {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .step-text b {
+            display: block;
+            font-size: 15.5px;
+            margin-bottom: 2px;
+        }
+        .step-text span {
+            color: var(--muted);
+            font-size: 14px;
+        }
+        .install-divider {
+            border: 0;
+            border-top: 1px solid var(--rule);
+            margin: 24px 0;
+        }
+        @media (max-width: 480px) {
+            .install-body { padding: 18px; }
+            .install-header { padding: 16px 18px; }
+        }
+
+        .flag-pending { display: inline-block; font-size: 11px; font-weight: 700; color: #fff; background: var(--alert); border-radius: 2px; padding: 1px 6px; margin-inline-start: 7px; vertical-align: middle }
+        a.leaf.pending::before { background: var(--alert); transform: scaleY(1); opacity: .5 }
+        a.leaf.pending:hover::before, a.leaf.pending:focus-visible::before { opacity: 1 }
+        a.leaf.pending h3 { color: var(--alert-ink) }
+        .soon.pending { border-inline-start: 3px solid rgba(178,45,32,.4); padding-inline-start: 13px }
+        .chip-pending[aria-pressed="true"] { background: var(--alert); border-color: var(--alert); color: #fff }
+        .count .pend { color: var(--alert-ink); font-weight: 600 }
+
+        .usage { flex: 1 1 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 7px 14px; margin-top: 12px; padding-top: 11px; border-top: 1px dashed var(--rule); font-size: 13px; color: var(--muted) }
+        .usage b { color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums }
+        .usage .meter { flex: none; width: 116px; height: 6px; border-radius: 3px; background: var(--rule); overflow: hidden }
+        .usage .meter i { display: block; height: 100%; width: 0; background: var(--marking); transition: width .25s ease }
+        .usage .u-contact { margin-inline-start: auto }
+        .usage .u-contact a { color: #8a6a12 }
+        .usage.low .meter i { background: var(--alert) }
+        .usage.low .u-msg { color: var(--alert-ink); font-weight: 600 }
+        @media (max-width:640px) { .usage .u-contact { margin-inline-start: 0; flex: 1 1 100% } }
+
+        .limit-card { max-width: 540px; width: 100%; background: var(--paper); border-radius: 5px; border-top: 5px solid var(--alert); padding: 30px 32px 26px }
+        .limit-card h2 { margin: 0 0 12px; font-size: 1.5rem; font-weight: 800; letter-spacing: -.01em }
+        .limit-card p { margin: 0 0 12px; font-size: 15px; line-height: 1.65; color: #33393F }
+        .limit-card .reset { display: inline-block; background: var(--paper-2); border: 1px solid var(--rule); border-radius: 3px; padding: 8px 13px; font-size: 14px; font-variant-numeric: tabular-nums }
+        .limit-card ul { margin: 14px 0 0; padding: 0; list-style: none; font-size: 14.5px }
+        .limit-card li { margin-bottom: 7px }
+        .limit-card a { color: #8a6a12 }
+        .limit-card .card-foot { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted) }
+        @media (max-width: 480px) { .limit-card { padding: 24px 20px 22px } }
+
+        .strip { background: var(--ink); color: var(--paper); padding: 22px 0 24px; border-bottom: 1px solid var(--rule-dark) }
+        .strip .wrap { display: grid; grid-template-columns: 1fr; gap: 12px }
+        @media (min-width:760px) { .strip .wrap { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+        @media (min-width:1040px) { .strip .wrap { grid-template-columns: repeat(4, minmax(0,1fr)) } }
+        .strip-head { grid-column: 1/-1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin-bottom: 2px }
+        .strip-head h2 { font-size: 1.06rem; font-weight: 800; letter-spacing: -.01em }
+        .strip-head span { font-size: 13px; color: var(--muted-dark) }
+        a.fresh { display: block; text-decoration: none; color: var(--paper); background: #1B2126;
+            border: 1px solid var(--rule-dark); border-radius: 4px; padding: 13px 14px; transition: border-color .15s, background .15s }
+        a.fresh:hover { border-color: var(--marking); background: #20272D }
+        a.fresh b { display: block; font-size: 14.6px; font-weight: 700; margin-bottom: 4px }
+        a.fresh span { display: block; font-size: 13px; color: var(--muted-dark); line-height: 1.5 }
+        a.fresh em { font-style: normal; color: var(--marking); font-weight: 700; font-size: 11.5px;
+            letter-spacing: .04em; display: block; margin-bottom: 6px }
+
+        .routes { background: var(--paper-2); border-bottom: 1px solid var(--rule); padding: 34px 0 38px }
+        .routes .wrap > .r-head { margin-bottom: 18px }
+        .r-head h2 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; letter-spacing: -.015em; margin-bottom: 6px }
+        .r-head p { font-size: 15px; color: var(--muted); max-width: 62ch }
+        .r-grid { display: grid; grid-template-columns: 1fr; gap: 14px }
+        @media (min-width:700px) { .r-grid { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+        @media (min-width:1040px) { .r-grid { grid-template-columns: repeat(3, minmax(0,1fr)) } }
+        .route { background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 16px 18px 15px;
+            position: relative; overflow: hidden }
+        .route::before { content: ""; position: absolute; inset-inline-start: 0; top: 0; bottom: 0; width: 4px; background: var(--marking) }
+        .route h3 { font-size: 1.04rem; font-weight: 800; letter-spacing: -.01em; margin-bottom: 5px }
+        .route .who2 { font-size: 12.5px; color: var(--muted); display: block; margin-bottom: 9px }
+        .route p { font-size: 14px; color: var(--muted); line-height: 1.55; margin-bottom: 11px }
+        .route ul { list-style: none; display: flex; flex-direction: column; gap: 6px }
+        .route li a { display: flex; gap: 8px; align-items: baseline; font-size: 14px; font-weight: 600;
+            text-decoration: none; color: var(--ink); border-bottom: 1px solid transparent }
+        .route li a:hover { border-bottom-color: var(--marking) }
+        .route li a::before { content: "←"; color: var(--marking); font-weight: 800; flex: none }
+
+        .flow { border: 1px solid var(--rule); border-radius: 4px; background: var(--paper-2); padding: 18px 20px; margin-bottom: 14px }
+        .flow h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 4px; letter-spacing: -.01em }
+        .flow > p { font-size: 14px; color: var(--muted); margin-bottom: 14px; max-width: 70ch }
+        .steps2 { list-style: none; display: grid; grid-template-columns: 1fr; gap: 10px; counter-reset: st }
+        @media (min-width:820px) { .steps2 { grid-template-columns: repeat(4, minmax(0,1fr)) } .steps2.three { grid-template-columns: repeat(3, minmax(0,1fr)) } }
+        .steps2 li { counter-increment: st; background: var(--paper); border: 1px solid var(--rule); border-radius: 3px; padding: 11px 12px }
+        .steps2 li::before { content: counter(st); display: inline-flex; align-items: center; justify-content: center;
+            width: 20px; height: 20px; border-radius: 3px; background: var(--marking); color: var(--ink);
+            font-size: 12px; font-weight: 800; margin-bottom: 7px }
+        .steps2 b { display: block; font-size: 14px; font-weight: 700; margin-bottom: 3px }
+        .steps2 span { display: block; font-size: 13px; color: var(--muted); line-height: 1.5 }
+        .steps2 a { color: var(--alert-ink); font-weight: 600; text-decoration: underline; text-underline-offset: 2px }
+        .flow-foot { margin-top: 13px; font-size: 13.5px; color: var(--muted) }
+        .flow-foot a { font-weight: 600; color: var(--alert-ink) }
+
+        .chain { background: var(--asphalt); color: var(--paper); border-radius: 4px; padding: 20px 22px; margin-top: 6px }
+        .chain h3 { font-size: 1.08rem; font-weight: 800; margin-bottom: 6px }
+        .chain > p { font-size: 14.2px; color: var(--muted-dark); line-height: 1.6; max-width: 72ch; margin-bottom: 16px }
+        .chain-line { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px }
+        .chain-line a, .chain-line span.node { display: inline-flex; align-items: center; min-height: 38px; padding: 7px 12px;
+            border: 1px solid var(--rule-dark); border-radius: 3px; font-size: 13.5px; font-weight: 600;
+            text-decoration: none; color: var(--paper); background: #1B2126 }
+        .chain-line a:hover { border-color: var(--marking) }
+        .chain-line span.node { color: var(--muted-dark); border-style: dashed }
+        .chain-line i { font-style: normal; color: var(--marking); font-weight: 800 }
+        .chain ul { list-style: none; display: grid; grid-template-columns: 1fr; gap: 7px; font-size: 13.6px; color: var(--muted-dark) }
+        @media (min-width:820px) { .chain ul { grid-template-columns: 1fr 1fr; gap: 7px 26px } }
+        .chain ul li::before { content: "·"; color: var(--marking); font-weight: 800; margin-inline-end: 7px }
+
+        .seek { display: grid; grid-template-columns: 1fr; gap: 14px }
+        @media (min-width:760px) { .seek { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+        @media (min-width:1040px) { .seek { grid-template-columns: repeat(3, minmax(0,1fr)) } }
+        .seek section { border: 1px solid var(--rule); border-radius: 4px; padding: 14px 16px; background: var(--paper-2) }
+        .seek h3 { font-size: 14.5px; font-weight: 800; margin-bottom: 9px }
+        .seek ul { list-style: none; display: flex; flex-direction: column; gap: 5px }
+        .seek li a { font-size: 13.6px; color: var(--muted); text-decoration: none; line-height: 1.5; display: block }
+        .seek li a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 2px }
+        .seek li a b { color: var(--ink); font-weight: 600 }
+
+        .qa { border-top: 1px solid var(--rule) }
+        .qa details { border-bottom: 1px solid var(--rule) }
+        .qa summary { cursor: pointer; list-style: none; display: flex; gap: 12px; align-items: baseline;
+            padding: 14px 2px; font-size: 15.5px; font-weight: 700; letter-spacing: -.01em }
+        .qa summary::-webkit-details-marker { display: none }
+        .qa summary .arrow { margin-top: 2px }
+        .qa .a { padding: 0 2px 16px; font-size: 14.6px; color: var(--muted); line-height: 1.65; max-width: 76ch }
+        .qa .a a { color: var(--alert-ink); font-weight: 600 }
+
+        .foldable { border: 1px solid var(--rule); border-radius: 4px; background: var(--paper-2) }
+        .foldable[open] { background: var(--paper) }
+        .foldable > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 13px;
+            padding: 16px 18px; font-size: 1.12rem; font-weight: 800; letter-spacing: -.015em;
+            border-inline-start: 4px solid transparent }
+        .foldable > summary::-webkit-details-marker { display: none }
+        .foldable[open] > summary { border-inline-start-color: var(--marking); border-bottom: 1px solid var(--rule) }
+        .foldable > summary:hover { background: #eceee8 }
+        .foldable .kw-hint { margin-inline-start: auto; font-size: 13px; font-weight: 500; color: var(--muted) }
+        .fold-body { padding: 16px 18px 20px }
+        .fold-lede { font-size: 15px; color: var(--muted); max-width: 70ch; margin-bottom: 18px }
+        .fold-body .flow:last-of-type { margin-bottom: 0 }
+        @media (max-width:600px) { .foldable > summary { font-size: 1.02rem; padding: 14px 14px } .fold-body { padding: 14px } }
+
+        .share-cta { background: linear-gradient(90deg, rgba(37,211,102,.18), rgba(37,211,102,.04)); border-color: #25D366; box-shadow: 0 0 0 3px rgba(37,211,102,.10) }
+        .share-cta:hover, .share-cta:focus-visible { background: rgba(37,211,102,.24); box-shadow: 0 0 0 4px rgba(37,211,102,.18) }
+        .share-cta .app-cta-badge { background: #25D366; color: #062814 }
+
+        html { -webkit-text-size-adjust: 100%; text-size-adjust: 100% }
+        body { overflow-x: hidden; overscroll-behavior-y: contain; -webkit-tap-highlight-color: rgba(233,177,47,.25) }
+        img, svg, table { max-width: 100% }
+        .wrap { padding-inline: max(16px, env(safe-area-inset-inline, 0px)) }
+        .masthead { padding-top: env(safe-area-inset-top, 0px) }
+        footer { padding-bottom: max(18px, env(safe-area-inset-bottom, 0px)) }
+        a, button, select, summary { touch-action: manipulation }
+        .tblwrap, .seek, .r-grid { -webkit-overflow-scrolling: touch }
+        @media (display-mode: standalone) {
+            .masthead { position: sticky; top: 0; z-index: 40 }
+        }
+
+#mUp, #mClear { display: none }
+@media (max-width: 820px) {
+  .controls { padding: 10px 0 8px }
+  .controls .wrap { display: flex; flex-direction: column; gap: 8px }
+  .search { flex: 1 1 100%; min-height: 50px; border-radius: 10px; padding: 0 12px; position: relative }
+  .search input { font-size: 16px; min-height: 48px; width: 100%; border: 0; background: transparent }
+  #mClear { position: absolute; inset-inline-end: 6px; top: 50%; transform: translateY(-50%);
+    width: 34px; height: 34px; border-radius: 50%; border: 0; display: none; align-items: center;
+    justify-content: center; background: var(--rule, #ddd); color: var(--ink, #222); font-size: 15px;
+    cursor: pointer; z-index: 3 }
+  #mClear.on { display: flex }
+  .filters { flex-wrap: nowrap; overflow-x: auto; gap: 8px; scrollbar-width: none;
+    margin-inline: calc(-1 * max(16px, env(safe-area-inset-inline, 0px)));
+    padding-inline: max(16px, env(safe-area-inset-inline, 0px)); padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity }
+  .filters::-webkit-scrollbar { display: none }
+  .filters .chip { flex: 0 0 auto; min-height: 42px; font-size: 13px; padding: 8px 15px;
+    scroll-snap-align: start }
+  .count { font-size: 13px; margin: 0 }
+  a.leaf, #catalog .soon { min-height: 54px; padding-top: 13px; padding-bottom: 13px }
+  .branch > summary, .twig > summary { min-height: 52px; display: flex; align-items: center;
+    flex-wrap: wrap; gap: 6px }
+  .gate { min-height: 64px }
+  #mUp { display: flex; position: fixed; inset-inline-start: 14px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 45; width: 48px; height: 48px;
+    border-radius: 50%; align-items: center; justify-content: center; border: 0; font-size: 20px;
+    background: var(--ink, #1b1b1b); color: var(--paper, #fff); box-shadow: 0 6px 18px rgba(0,0,0,.28);
+    opacity: 0; pointer-events: none; transition: opacity .2s }
+  body.m-scrolled #mUp { opacity: 1; pointer-events: auto }
+}
+@media print { #mUp, #mClear { display: none !important } }
+
+.routes-late { background: var(--paper-2); border: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  border-radius: 4px; padding: 24px 22px 26px; margin: 0 0 26px }
+.routes-late .r-head { margin-bottom: 16px }
+@media (max-width: 820px) {
+  .routes-late { padding: 16px 12px 18px; margin-bottom: 18px }
+  .routes-late .r-head h2 { font-size: 1.14rem }
+  .routes-late .r-head p { font-size: 13.5px }
+  .routes-late .r-grid { gap: 8px }
+  .routes-late .route { padding: 0; border-radius: 8px; cursor: pointer }
+  .routes-late .route > h3 { margin: 0; padding: 13px 40px 3px 16px; font-size: 15px }
+  .routes-late .route > .who2 { margin: 0; padding: 0 16px 13px; font-size: 12.5px }
+  .routes-late .route > h3::after { content: "+"; position: absolute; inset-inline-end: 14px; top: 10px;
+    font-size: 21px; line-height: 1; font-weight: 700; color: var(--marking) }
+  .routes-late .route.open > h3::after { content: "–" }
+  .routes-late .route > p, .routes-late .route > ul { display: none }
+  .routes-late .route.open > p { display: block; padding: 0 16px; font-size: 13.5px; margin-bottom: 8px }
+  .routes-late .route.open > ul { display: flex; padding: 0 16px 14px; gap: 2px }
+  .routes-late .route li a { min-height: 46px; align-items: center; font-size: 14.5px }
+}
+
+.role-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px }
+.role-tab { font: inherit; font-size: 14px; font-weight: 700; min-height: 44px; padding: 8px 16px;
+  border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink);
+  cursor: pointer; white-space: nowrap; touch-action: manipulation }
+.role-tab:hover { border-color: var(--muted) }
+.role-tab[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink);
+  box-shadow: inset 0 -3px 0 var(--marking) }
+.routes-late .r-grid { grid-template-columns: 1fr !important }
+.routes-late.tabbed .route:not(.on) { display: none !important }
+.routes-late.tabbed .route { cursor: default; padding: 18px 20px 16px }
+.routes-late.tabbed .route > h3::after { content: none !important }
+.routes-late.tabbed .route > p, .routes-late.tabbed .route > ul { display: revert }
+.routes-late.tabbed .route > ul { display: grid; grid-template-columns: 1fr; gap: 2px }
+.routes-late.tabbed .route li a { min-height: 44px; align-items: center }
+@media (min-width: 700px) { .routes-late.tabbed .route > ul { grid-template-columns: 1fr 1fr; gap: 2px 28px } }
+@media (max-width: 820px) {
+  .role-tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity; margin-inline: -12px; padding: 2px 12px 6px }
+  .role-tabs::-webkit-scrollbar { display: none }
+  .role-tab { flex: 0 0 auto; scroll-snap-align: start; font-size: 13.5px }
+  .routes-late.tabbed .route { padding: 14px 16px 12px }
+  .routes-late.tabbed .route > h3 { padding: 0; margin-bottom: 4px }
+  .routes-late.tabbed .route > .who2 { padding: 0; margin-bottom: 8px }
+  .routes-late.tabbed .route > p { padding: 0; font-size: 13.5px }
+  .routes-late.tabbed .route > ul { padding: 0 }
+}
+
+@media (min-width: 821px) and (max-width: 1180px) {
+  .wrap { padding-inline: max(24px, env(safe-area-inset-inline, 0px)) }
+  .masthead nav { gap: 16px; font-size: 14px; overflow-x: auto; scrollbar-width: none; white-space: nowrap }
+  .masthead nav::-webkit-scrollbar { display: none }
+  .controls .wrap { flex-wrap: wrap; row-gap: 10px }
+  .search { flex: 1 1 100% }
+  .search input { font-size: 16px; min-height: 46px }
+  .filters { flex-wrap: wrap }
+  .filters .chip { min-height: 42px; padding: 8px 15px }
+  a.leaf { grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 4px 16px }
+  a.leaf .std { grid-column: 1 / -1; text-align: right; direction: rtl }
+  .block-head { flex-wrap: wrap; gap: 6px 14px }
+  .tier { gap: 14px }
+  .hero h1 { font-size: clamp(2rem, 4.2vw, 2.8rem) }
+}
+@media (hover: none) and (pointer: coarse) {
+  .masthead nav a { padding: 12px 2px }
+  .branch > summary, .twig > summary { min-height: 50px }
+  a.leaf { min-height: 52px }
+  .route li a, .seek li a, footer a { min-height: 40px; display: flex; align-items: center }
+  input, select, textarea { font-size: 16px }
+  .gate:hover, a.leaf:hover::before { transform: none }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .masthead, .controls { position: static }
+  .hero { padding: 28px 0 30px }
+}
+
+@media (max-width: 820px) {
+  .controls { position: static }
+  .controls .wrap > * { min-width: 0; max-width: 100% }
+  .filters { min-width: 0; width: auto; max-width: none }
+  .count { width: auto !important; max-width: 100% }
+  .usage, .usage * { min-width: 0; max-width: 100%; overflow-wrap: anywhere }
+  .usage { flex-wrap: wrap }
+  .usage a[href^="tel"] { white-space: nowrap; direction: ltr; unicode-bidi: isolate }
+}
+
+.strip { padding: 0 }
+.strip .wrap { display: block !important }
+.strip-fold > summary.strip-head { list-style: none; cursor: pointer; margin: 0; padding: 14px 0;
+  align-items: center; min-height: 54px }
+.strip-fold > summary::-webkit-details-marker { display: none }
+.strip-fold > summary .arrow { border-color: var(--marking); align-self: center }
+.strip-fold[open] > summary .arrow { transform: rotate(135deg); margin-top: 2px }
+.strip-head .s-n { background: var(--marking); color: var(--ink); font-size: 12px; font-weight: 800;
+  padding: 2px 9px; border-radius: 20px }
+.strip-head .s-hint { margin-inline-start: auto; font-size: 12.5px }
+.strip-fold[open] .s-hint::after { content: " · إغلاق" }
+.strip-fold:not([open]) .s-hint::after { content: " · فتح" }
+.strip-grid { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 2px 0 22px }
+@media (min-width:760px) { .strip-grid { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+@media (min-width:1040px) { .strip-grid { grid-template-columns: repeat(4, minmax(0,1fr)) } }
+@media (max-width:640px) { .strip-head .s-hint { display: none } }
+
+.hero-primary { margin-bottom: 22px }
+.hero-quick { margin: 0 0 22px }
+.hq-label { display: block; font-size: 12px; font-weight: 800; letter-spacing: .06em; color: var(--marking); margin-bottom: 9px }
+.hq-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px }
+a.hq { display: flex; flex-direction: column; justify-content: center; min-height: 56px; padding: 9px 13px;
+  border: 1px solid var(--rule-dark); border-radius: 6px; background: #1B2126; color: var(--paper);
+  text-decoration: none; transition: border-color .15s, background .15s }
+a.hq:hover, a.hq:focus-visible { border-color: var(--marking); background: #20272D }
+a.hq small { font-size: 11.5px; color: var(--muted-dark); font-weight: 600 }
+a.hq b { font-size: 14.5px; font-weight: 700; line-height: 1.35 }
+.hero .app-actions { gap: 8px; margin: 0 0 4px; padding-top: 16px; border-top: 1px solid var(--rule-dark) }
+.hero .app-cta { padding: 8px 12px; gap: 10px; box-shadow: none }
+.hero .app-cta-text b { font-size: 13.5px }
+.hero .app-cta-text span { font-size: 12px }
+@media (max-width:599px) { .hq-list { grid-template-columns: 1fr 1fr } a.hq b { font-size: 13.5px } }
+
+.hq-dropdown {
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: 56px; padding: 9px 13px;
+    border: 1px solid var(--rule-dark); border-radius: 6px; background: #1B2126; color: var(--paper);
+    position: relative; cursor: pointer; user-select: none; -webkit-user-select: none;
+    transition: border-color .15s, background .15s;
+}
+.hq-dropdown:hover { border-color: var(--marking); background: #20272D }
+.hq-dropdown.open { border-color: var(--marking); background: #20272D }
+.hq-dropdown > small { font-size: 11.5px; color: var(--muted-dark); font-weight: 600 }
+.hq-dropdown > b { font-size: 14.5px; font-weight: 700; line-height: 1.35 }
+.hq-dropdown .hq-options {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    inset-inline-start: 0;
+    width: 100%;
+    min-width: 210px;
+    background: #1B2126;
+    border: 1px solid var(--marking);
+    border-radius: 8px;
+    z-index: 200;
+    box-shadow: 0 10px 24px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.hq-dropdown.open .hq-options { display: block }
+.hq-dropdown .hq-opt {
+    display: block;
+    padding: 11px 14px;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-align: right;
+    transition: background .15s, color .15s;
+    border-bottom: 1px solid var(--rule-dark);
+}
+.hq-dropdown .hq-opt:last-child { border-bottom: 0 }
+.hq-dropdown .hq-opt.gray { color: var(--paper); background: #2C3239 }
+.hq-dropdown .hq-opt.gray:hover, .hq-dropdown .hq-opt.gray:focus-visible { background: #39404A }
+.hq-dropdown .hq-opt.gold { color: var(--ink); background: var(--marking) }
+.hq-dropdown .hq-opt.gold:hover, .hq-dropdown .hq-opt.gold:focus-visible { background: #F3C455 }
+@media (max-width:599px) { .hq-dropdown > b { font-size: 13.5px } .hq-dropdown > small { font-size: 11.5px } }
+
+main.wrap { padding-bottom: 40px }
+.part-div { display: flex; align-items: center; gap: 12px; margin: 46px 0 14px; font-size: 13px;
+  font-weight: 800; letter-spacing: .05em; color: var(--ink) }
+.part-div::before { content: ""; flex: none; width: 26px; height: 6px; border-radius: 1px;
+  background: repeating-linear-gradient(90deg, var(--marking) 0 8px, transparent 8px 12px) }
+.part-div::after { content: ""; flex: 1; height: 1px; background: var(--rule) }
+.part-div span { color: var(--muted); font-weight: 500; letter-spacing: 0 }
+main.wrap > .block { padding: 22px 24px 24px; margin: 0 0 14px; background: var(--paper-2);
+  border: 1px solid var(--rule); border-radius: 8px }
+main.wrap > .block > .block-head { border-bottom-width: 1px; border-bottom-color: var(--rule); margin-bottom: 8px }
+main.wrap > .block:has(> details.foldable:only-child) { padding: 0; background: none; border: 0 }
+main.wrap > .routes-late { margin: 0 0 14px; border-radius: 8px }
+main.wrap > .block .tier:last-of-type { border-bottom: 0 }
+main.wrap > details.keywords { margin-top: 30px }
+@media (max-width: 820px) {
+  .part-div { margin: 34px 0 10px; font-size: 12.5px }
+  .part-div span { display: none }
+  main.wrap > .block { padding: 16px 14px 18px }
+}
+
+@media (max-width:599px) {
+  .hero .plan { display: none }
+  .hero { padding: 34px 0 30px }
+  .tally { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; margin-top: 22px }
+}
+
+a.hq{border-radius:14px;min-height:62px;padding:10px 14px 10px 14px;position:relative;overflow:hidden;
+  transition:transform .15s cubic-bezier(.2,.8,.2,1),border-color .15s,background .15s}
+a.hq:active{transform:scale(.97)}
+a.hq::before{content:"";position:absolute;inset-inline-start:0;top:10px;bottom:10px;width:4px;border-radius:0 3px 3px 0;background:var(--marking);opacity:.85}
+a.hq small{font-size:12px}
+.hq-dropdown{border-radius:14px;min-height:62px;padding:10px 14px}
+.hq-dropdown::before{content:"";position:absolute;inset-inline-start:0;top:10px;bottom:10px;width:4px;border-radius:0 3px 3px 0;background:var(--marking);opacity:.85}
+.hq-dropdown small{font-size:12px}
+.hero .app-cta{border-radius:12px}
+.hero .btn{border-radius:12px}
+.tally{margin-top:26px}
+
+/* فئة فرعية ذهبية في الفهرس: مقطع مؤقت */
+a.leaf.leaf-temp{border-inline-start:3px solid var(--marking);padding-inline-start:14px;background:linear-gradient(90deg,rgba(233,177,47,.13),transparent 70%)}
+a.leaf.leaf-temp::before{display:none}
+.leaf .tool-flag.gold-flag{background:#141A1F;color:var(--marking)!important;box-shadow:inset 0 0 0 1px var(--marking)}
+:root[data-theme="dark"] .leaf .tool-flag.gold-flag{background:var(--marking);color:#141A1F!important}
+</style>
+
+<!-- ===== MAHALCO · مظهر العرض ===== -->
+<script data-light="#F4F5F1" data-dark="#15181C" data-slot=".masthead .wrap">
+(function(){
+  var d=document.documentElement, K='mh-theme', G='mh-glass';
+  var me=document.currentScript||{dataset:{}};
+  var LC=me.dataset.light||'#F2F2F7', DC=me.dataset.dark||'#000000', SLOT=me.dataset.slot||'';
+  function rd(k,v){try{return localStorage.getItem(k)||v}catch(e){return v}}
+  function wr(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  var mq=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):{matches:false};
+  var ui=null;
+  function apply(){
+    var pref=rd(K,'auto'); if(!/^(light|dark|auto)$/.test(pref)) pref='auto';
+    var t=pref==='auto'?(mq.matches?'dark':'light'):pref, gl=rd(G,'on')==='on'?'on':'off';
+    d.setAttribute('data-theme',t); d.setAttribute('data-theme-pref',pref); d.setAttribute('data-glass',gl);
+    d.style.colorScheme=t;
+    var ms=document.querySelectorAll('meta[name="theme-color"]');
+    if(!ms.length && document.head){var m=document.createElement('meta');m.name='theme-color';document.head.appendChild(m);ms=[m];}
+    for(var i=0;i<ms.length;i++){ms[i].removeAttribute('media');ms[i].setAttribute('content',t==='dark'?DC:LC);}
+    if(ui) ui.sync(pref,gl);
+    try{document.dispatchEvent(new CustomEvent('mh:theme',{detail:{theme:t,pref:pref,glass:gl}}));}catch(e){}
+  }
+  function soft(){
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('mh-anim'); clearTimeout(soft.t); soft.t=setTimeout(function(){d.classList.remove('mh-anim');},1500);
+  }
+  window.MHTheme={
+    set:function(p){wr(K,p);soft();apply();},
+    glass:function(on){wr(G,on?'on':'off');soft();apply();},
+    get:function(){return {theme:d.getAttribute('data-theme'),pref:rd(K,'auto'),glass:rd(G,'on')};}
+  };
+  apply();
+  if(mq.addEventListener) mq.addEventListener('change',function(){if(rd(K,'auto')==='auto'){soft();apply();}});
+  else if(mq.addListener) mq.addListener(function(){if(rd(K,'auto')==='auto') apply();});
+  window.addEventListener('storage',function(e){if(e.key===K||e.key===G) apply();});
+
+  var ICO={
+    look:'<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg>',
+    light:'<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>',
+    dark:'<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M20 14.6A8.4 8.4 0 0 1 9.4 4a8.4 8.4 0 1 0 10.6 10.6z" fill="currentColor"/></svg>',
+    auto:'<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4.5" width="18" height="12" rx="2.2"/><path d="M8.5 20h7M12 16.5V20" stroke-linecap="round"/></svg>'
+  };
+  function build(){
+    if(document.getElementById('mh-look')) return;
+    var b=document.body;
+    var bg=document.createElement('div'); bg.id='mh-bg'; bg.setAttribute('aria-hidden','true'); b.insertBefore(bg,b.firstChild);
+    var btn=document.createElement('button');
+    btn.type='button'; btn.id='mh-look'; btn.className='mh-look';
+    btn.setAttribute('aria-label','مظهر العرض: فاتح، ليلي، وزجاج');
+    btn.setAttribute('aria-haspopup','dialog'); btn.setAttribute('aria-expanded','false');
+    btn.title='مظهر العرض'; btn.innerHTML=ICO.look;
+    var slot=SLOT?document.querySelector(SLOT):null;
+    if(slot){btn.classList.add('mh-inline');slot.appendChild(btn);} else {btn.classList.add('mh-float');b.appendChild(btn);}
+    var pop=document.createElement('div');
+    pop.className='mh-pop'; pop.id='mh-pop'; pop.setAttribute('role','dialog'); pop.setAttribute('aria-label','مظهر العرض'); pop.hidden=true;
+    pop.innerHTML=
+      '<div class="mh-pop-h">مظهر العرض</div>'+
+      '<div class="mh-seg" role="radiogroup" aria-label="لوحة الألوان">'+
+        '<span class="mh-knob" aria-hidden="true"></span>'+
+        '<button type="button" role="radio" data-v="light">'+ICO.light+'<span>فاتح</span></button>'+
+        '<button type="button" role="radio" data-v="dark">'+ICO.dark+'<span>ليلي</span></button>'+
+        '<button type="button" role="radio" data-v="auto">'+ICO.auto+'<span>حسب الجهاز</span></button>'+
+      '</div>'+
+      '<label class="mh-row"><span class="mh-row-t"><b>زجاج iOS</b><small>شفافية وضباب خلف البطاقات</small></span>'+
+      '<input type="checkbox" class="mh-sw" role="switch"></label>'+
+      '<p class="mh-foot">يُحفظ الاختيار لكل الصفحات والأدوات في الموقع.</p>';
+    b.appendChild(pop);
+    var seg=pop.querySelector('.mh-seg'), knob=pop.querySelector('.mh-knob'), sw=pop.querySelector('.mh-sw');
+    function place(){
+      var r=btn.getBoundingClientRect(), w=pop.offsetWidth, h=pop.offsetHeight, vw=innerWidth, vh=innerHeight;
+      var left=Math.min(Math.max(8,r.left),vw-w-8);
+      var top=(r.bottom+10+h<vh-8)?r.bottom+10:Math.max(8,r.top-h-10);
+      pop.style.left=left+'px'; pop.style.top=top+'px';
+    }
+    function moveKnob(){
+      var on=seg.querySelector('[aria-checked="true"]'); if(!on||!pop.offsetWidth) return;
+      knob.style.width=on.offsetWidth+'px'; knob.style.left=on.offsetLeft+'px';
+    }
+    function open(){pop.hidden=false;btn.setAttribute('aria-expanded','true');place();moveKnob();
+      requestAnimationFrame(function(){pop.classList.add('on');});
+      var c=seg.querySelector('[aria-checked="true"]'); if(c) c.focus({preventScroll:true});}
+    function close(f){if(pop.hidden) return; pop.classList.remove('on');btn.setAttribute('aria-expanded','false');pop.hidden=true; if(f) btn.focus();}
+    btn.addEventListener('click',function(e){e.stopPropagation(); pop.hidden?open():close();});
+    pop.addEventListener('click',function(e){e.stopPropagation();});
+    document.addEventListener('click',function(){close();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape') close(true);});
+    addEventListener('resize',function(){if(!pop.hidden){place();moveKnob();}});
+    addEventListener('scroll',function(){if(!pop.hidden) place();},{passive:true});
+    seg.addEventListener('click',function(e){var t=e.target.closest('button[data-v]'); if(t) MHTheme.set(t.dataset.v);});
+    seg.addEventListener('keydown',function(e){
+      if(e.key!=='ArrowLeft'&&e.key!=='ArrowRight') return;
+      var bs=[].slice.call(seg.querySelectorAll('button')), i=bs.indexOf(document.activeElement); if(i<0) return;
+      i=(i+(e.key==='ArrowLeft'?1:-1)+bs.length)%bs.length; bs[i].focus(); MHTheme.set(bs[i].dataset.v); e.preventDefault();
+    });
+    sw.addEventListener('change',function(){MHTheme.glass(sw.checked);});
+    ui={sync:function(pref,gl){
+      [].forEach.call(seg.querySelectorAll('button'),function(x){var on=x.dataset.v===pref;x.setAttribute('aria-checked',on);x.tabIndex=on?0:-1;});
+      sw.checked=gl==='on'; moveKnob();
+    }};
+    apply();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',build); else build();
+})();
+</script>
+<style id="mh-look-kit">
+:root{--mh-glass-fill:rgba(255,255,255,.56);--mh-glass-fill-2:rgba(255,255,255,.40);--mh-glass-bar:rgba(248,248,250,.66);
+  --mh-glass-line:rgba(255,255,255,.72);--mh-glass-edge:rgba(0,0,0,.06);
+  --mh-glass-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 1px 2px rgba(0,0,0,.04),0 12px 32px rgba(30,40,60,.10);
+  --mh-blob-a:rgba(233,177,47,.42);--mh-blob-b:rgba(64,128,214,.34);--mh-blob-c:rgba(52,170,110,.24);--mh-glass-base:#E9ECF1;
+  --mh-ui-bg:rgba(250,250,252,.90);--mh-ui-ink:#1C1C1E;--mh-ui-ink2:#6C6C70;--mh-ui-fill:rgba(118,118,128,.14);
+  --mh-ui-knob:#fff;--mh-ui-line:rgba(60,60,67,.16);--mh-ui-on:#34C759}
+:root[data-theme="dark"]{--mh-glass-fill:rgba(30,32,38,.52);--mh-glass-fill-2:rgba(255,255,255,.055);--mh-glass-bar:rgba(20,22,26,.62);
+  --mh-glass-line:rgba(255,255,255,.13);--mh-glass-edge:rgba(255,255,255,.06);
+  --mh-glass-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 14px 36px rgba(0,0,0,.38);
+  --mh-blob-a:rgba(233,177,47,.24);--mh-blob-b:rgba(70,120,230,.30);--mh-blob-c:rgba(150,90,220,.20);--mh-glass-base:#0B0D11;
+  --mh-ui-bg:rgba(38,40,46,.90);--mh-ui-ink:#F2F2F7;--mh-ui-ink2:#AEAEB2;--mh-ui-fill:rgba(118,118,128,.30);
+  --mh-ui-knob:#636366;--mh-ui-line:rgba(255,255,255,.12);--mh-ui-on:#30D158}
+html.mh-anim, html.mh-anim body, html.mh-anim body *{transition:background-color .3s ease,border-color .3s ease,color .3s ease,fill .3s ease!important}
+#mh-bg{display:none}
+html[data-glass="on"]{background:var(--mh-glass-base)!important}
+html[data-glass="on"] body{background:transparent!important}
+html[data-glass="on"] #mh-bg{display:block;position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(38% 34% at 88% 6%,var(--mh-blob-a),transparent 72%),
+  radial-gradient(44% 40% at 6% 38%,var(--mh-blob-b),transparent 72%),
+  radial-gradient(42% 38% at 72% 94%,var(--mh-blob-c),transparent 72%),
+  var(--mh-glass-base)}
+.mh-look{display:inline-grid;place-items:center;flex:none;width:40px;height:40px;padding:0;margin:0;border-radius:50%;
+  border:.5px solid var(--mh-ui-line);background:var(--mh-ui-bg);color:var(--mh-ui-ink);cursor:pointer;
+  -webkit-backdrop-filter:blur(18px) saturate(180%);backdrop-filter:blur(18px) saturate(180%);
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:transform .15s ease}
+.mh-look:active{transform:scale(.92)}
+.mh-look:focus-visible{outline:3px solid #E9A21F;outline-offset:2px}
+.mh-look.mh-inline{margin-inline-start:8px}
+.mh-look.mh-float{position:fixed;z-index:45;width:46px;height:46px;inset-inline-end:max(14px,env(safe-area-inset-left,0px));
+  bottom:calc(var(--mh-fab-b,16px) + env(safe-area-inset-bottom,0px));box-shadow:0 6px 22px rgba(0,0,0,.20)}
+@media print{.mh-look,.mh-pop,#mh-bg{display:none!important}}
+.mh-pop{position:fixed;z-index:9991;width:292px;max-width:calc(100vw - 16px);padding:12px;border-radius:18px;direction:rtl;text-align:right;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Cairo","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.35;
+  color:var(--mh-ui-ink);background:var(--mh-ui-bg);border:.5px solid var(--mh-ui-line);
+  -webkit-backdrop-filter:blur(28px) saturate(180%);backdrop-filter:blur(28px) saturate(180%);
+  box-shadow:0 18px 50px rgba(0,0,0,.26),0 2px 6px rgba(0,0,0,.08);
+  opacity:0;transform:scale(.96) translateY(-4px);transform-origin:top left;transition:opacity .18s ease,transform .22s cubic-bezier(.2,.8,.2,1)}
+.mh-pop.on{opacity:1;transform:none}
+.mh-pop[hidden]{display:none!important}
+.mh-pop *{box-sizing:border-box}
+.mh-pop-h{font-size:13px;font-weight:600;color:var(--mh-ui-ink2);margin:2px 4px 9px}
+.mh-seg{position:relative;display:flex;gap:2px;padding:2px;border-radius:11px;background:var(--mh-ui-fill);isolation:isolate}
+.mh-seg button{position:relative;z-index:1;flex:1;min-width:0;min-height:54px;border:0;border-radius:9px;background:none;color:var(--mh-ui-ink);
+  font:inherit;font-size:12.5px;font-weight:500;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;padding:4px 2px}
+.mh-seg button[aria-checked="true"]{font-weight:700}
+.mh-seg button:focus-visible{outline:2px solid #E9A21F;outline-offset:-2px}
+.mh-knob{position:absolute;z-index:0;top:2px;bottom:2px;left:2px;width:0;border-radius:9px;background:var(--mh-ui-knob);
+  box-shadow:0 2px 6px rgba(0,0,0,.14),0 0 0 .5px rgba(0,0,0,.04);transition:left .3s cubic-bezier(.2,.8,.2,1),width .3s cubic-bezier(.2,.8,.2,1)}
+.mh-row{display:flex;align-items:center;gap:12px;margin:10px 0 0;padding:10px 12px;border-radius:12px;background:var(--mh-ui-fill);cursor:pointer}
+.mh-row-t{flex:1;min-width:0}
+.mh-row-t b{display:block;font-size:15px;font-weight:600}
+.mh-row-t small{display:block;font-size:12px;color:var(--mh-ui-ink2)}
+.mh-sw{appearance:none;-webkit-appearance:none;flex:none;width:51px;height:31px;margin:0;border-radius:16px;background:rgba(120,120,128,.32);position:relative;cursor:pointer;transition:background .25s}
+.mh-sw::after{content:"";position:absolute;top:2px;right:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.16);transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.mh-sw:checked{background:var(--mh-ui-on)}
+.mh-sw:checked::after{transform:translateX(-20px)}
+.mh-sw:focus-visible{outline:2px solid #E9A21F;outline-offset:2px}
+.mh-foot{margin:9px 4px 0;font-size:11.5px;color:var(--mh-ui-ink2)}
+@media (prefers-reduced-motion:reduce){.mh-pop,.mh-knob,.mh-sw,.mh-sw::after{transition:none!important}}
+:root[data-theme="dark"]{--asphalt:#15181C;--rule-dark:#2D333B}
+:root[data-theme="dark"] body{background:#0E1114;color:#E6E8E3}
+:root[data-theme="dark"] :is(.controls,main,.gates,dialog.install-dialog,.limit-card){
+  --paper:#161A1E;--paper-2:#1C2126;--ink:#E6E8E3;--rule:#323940;--muted:#9BA4AE;--alert:#E0493A;--alert-ink:#FF8C7C;color:var(--ink)}
+:root[data-theme="dark"] .chain{--paper:#E7E8E3;background:#1B2025}
+:root[data-theme="dark"] :is(.tool-flag,a.buy,.steps2 li::before,.step-num,.connect-area .input-group button,.leaf .tool-flag){color:#141A1F}
+:root[data-theme="dark"] :is(.branch>summary:hover,.foldable>summary:hover){background:rgba(255,255,255,.04)}
+:root[data-theme="dark"] .twig>summary:hover{color:#fff}
+:root[data-theme="dark"] :is(.connect-area .hint a,.usage .u-contact a,.limit-card a){color:var(--marking)}
+:root[data-theme="dark"] .limit-card p{color:#C9CDD1}
+:root[data-theme="dark"] .install-header{background:var(--paper-2)}
+:root[data-theme="dark"] .tag{background:#1C2126;color:#C9CDD1;border-color:#3A424A}
+:root[data-theme="dark"] :is(.tag-soft,.tag-agency,.tag-guideline,.tag-geo,.tag-project,.tag-plan){background:#1C2126}
+:root[data-theme="dark"] #mUp{background:#E6E8E3;color:#141A1F}
+:root[data-theme="dark"] .role-tab[aria-selected="true"]{background:#E6E8E3;color:#141A1F}
+:root[data-theme="dark"] .gate .g-n b{-webkit-text-stroke:0}
+:root[data-theme="dark"] .search svg{filter:invert(1)}
+:root[data-theme="dark"] .connect-area .code-sample code{background:#2A3036}
+:root[data-theme="dark"] .leaf.leaf-temp{background:linear-gradient(90deg,rgba(233,177,47,.10),transparent 70%)}
+:root[data-theme="dark"] .plan > rect:first-of-type{fill:#000}
+:root[data-theme="dark"] .plan > rect:not(:first-of-type){fill:#17191C}
+:root[data-theme="dark"] .plan > g:nth-of-type(1){stroke:#FFFFFF}
+:root[data-theme="dark"] .plan > g:nth-of-type(2){stroke:#FFFFFF;opacity:1}
+:root[data-theme="dark"] .plan > g:nth-of-type(3){fill:#FFFFFF}
+:root[data-theme="dark"] .plan > g:nth-of-type(4){stroke:#3A3F46}
+:root[data-theme="light"] :is(.masthead,.hero,.strip,footer){--asphalt:#F4F5F1;--paper:#141A1F;--muted-dark:#5C6570;--rule-dark:#D3D6CF;color:var(--paper)}
+:root[data-theme="light"] .masthead{background:rgba(244,245,241,.92);-webkit-backdrop-filter:blur(18px) saturate(180%);backdrop-filter:blur(18px) saturate(180%);border-bottom-color:#D3D6CF}
+:root[data-theme="light"] .hero{background:linear-gradient(180deg,#F4F5F1,#ECEEE8)}
+:root[data-theme="light"] .strip{background:#E4E6E0;border-bottom-color:#D3D6CF}
+:root[data-theme="light"] footer{background:#E4E6E0;border-top:1px solid #D3D6CF}
+:root[data-theme="light"] .btn-line:hover{background:#E4E6E0}
+:root[data-theme="light"] :is(a.hq,.hq-dropdown,a.fresh,.chain-line a){background:#fff;border-color:#D3D6CF;color:#141A1F}
+:root[data-theme="light"] :is(a.hq:hover,a.hq:focus-visible,.hq-dropdown:hover,.hq-dropdown.open,a.fresh:hover){background:#FFF8E6;border-color:var(--marking)}
+:root[data-theme="light"] .hq-dropdown .hq-options{background:#fff;box-shadow:0 12px 30px rgba(20,26,31,.16)}
+:root[data-theme="light"] .hq-dropdown .hq-opt.gray{background:#F1F2EE;color:#141A1F}
+:root[data-theme="light"] .hq-dropdown .hq-opt.gray:hover{background:#E4E6E0}
+:root[data-theme="light"] .hq-label,:root[data-theme="light"] a.fresh em{color:#8a6a12}
+:root[data-theme="light"] .strip-fold>summary .arrow{border-color:#8a6a12}
+:root[data-theme="light"] .masthead .mh-look{background:#fff;color:#141A1F;border-color:#D3D6CF}
+:root[data-theme="light"] #mUp{background:rgba(255,255,255,.9);color:#141A1F;border:.5px solid #D3D6CF;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:0 6px 18px rgba(0,0,0,.14)}
+:root[data-theme="light"] .plan{border-radius:14px}
+:root[data-theme="light"] .plan > rect:first-of-type{fill:#DCDFD8}
+:root[data-theme="light"] .plan > rect:not(:first-of-type){fill:#7A8088}
+:root[data-theme="light"] .plan > g:nth-of-type(1),:root[data-theme="light"] .plan > g:nth-of-type(2){stroke:#FFFFFF;opacity:1}
+:root[data-theme="light"] .plan > g:nth-of-type(3){fill:#FFFFFF}
+:root[data-theme="light"] .plan > g:nth-of-type(4){stroke:#C6C9C1}
+html[data-glass="on"][data-theme="dark"] .hero{background:rgba(18,21,25,.72)}
+html[data-glass="on"][data-theme="dark"] footer{background:rgba(21,24,28,.84)}
+html[data-glass="on"][data-theme="dark"] .strip{background:rgba(20,26,31,.82)}
+html[data-glass="on"][data-theme="light"] :is(.hero,footer,.strip){background:rgba(255,255,255,.34)}
+html[data-glass="on"] .branch{border-radius:18px}
+html[data-glass="on"] main.wrap>.block,html[data-glass="on"] .routes-late{border-radius:22px}
+html[data-glass="on"] :is(.route,.seek section,.flow,.keywords,.foldable){border-radius:16px}
+html[data-glass="on"] :is(.steps2 li,.search,.chip,.gate){border-radius:12px}
+html[data-glass="on"] :is(a.hq,.hq-dropdown,a.fresh,.chain-line a){background:rgba(255,255,255,.07)!important;
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-color:rgba(255,255,255,.14)!important}
+html[data-glass="on"] :is(a.hq,.hq-dropdown){overflow:visible}
+html[data-glass="on"] .hq-dropdown .hq-options{background:rgba(27,33,38,.82);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px)}
+html[data-glass="on"] main.wrap>.block:not(:has(> details.foldable:only-child)),
+html[data-glass="on"] .routes-late,
+html[data-glass="on"] .branch,
+html[data-glass="on"] .keywords,
+html[data-glass="on"] .foldable,
+html[data-glass="on"] .limit-card,
+html[data-glass="on"] dialog.install-dialog{background:var(--mh-glass-fill)!important;-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);border-color:var(--mh-glass-line)!important;box-shadow:var(--mh-glass-shadow)!important}
+html[data-glass="on"] .route,
+html[data-glass="on"] .seek section,
+html[data-glass="on"] .flow,
+html[data-glass="on"] .steps2 li,
+html[data-glass="on"] .search,
+html[data-glass="on"] .gate,
+html[data-glass="on"] .role-tab:not([aria-selected="true"]),
+html[data-glass="on"] .connect-area .code-sample,
+html[data-glass="on"] .install-header,
+html[data-glass="on"] .get-opt{background:var(--mh-glass-fill-2)!important;border-color:var(--mh-glass-edge)!important}
+html[data-glass="on"] .masthead,
+html[data-glass="on"] .controls,
+html[data-glass="on"] .gates{background:var(--mh-glass-bar)!important;-webkit-backdrop-filter:blur(22px) saturate(180%);backdrop-filter:blur(22px) saturate(180%);border-color:var(--mh-glass-edge)!important}
+html[data-glass="on"][data-theme="dark"] .masthead{background:rgba(21,24,28,.72)!important}
+html[data-glass="on"] .branch[open]{background:var(--mh-glass-fill)!important}
+[data-theme="dark"] .masthead .mh-look{background:rgba(255,255,255,.08);color:#E7E8E3;border-color:rgba(255,255,255,.16)}
+[data-theme="dark"] .masthead .mh-look:hover{background:rgba(255,255,255,.14)}
+
+.app-duo{display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:10px!important}
+@media (max-width:640px){.app-duo{grid-template-columns:1fr}}
+.duo{display:flex;align-items:center;gap:12px;min-height:64px;padding:10px 14px;border-radius:16px;text-decoration:none;
+  font:inherit;text-align:right;cursor:pointer;color:var(--paper);touch-action:manipulation;
+  transition:transform .15s cubic-bezier(.2,.8,.2,1),background .15s,border-color .15s}
+.duo:active{transform:scale(.97)}
+.duo-ico{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px}
+.duo-txt{display:flex;flex-direction:column;min-width:0;line-height:1.3}
+.duo-txt b{font-size:14.5px;font-weight:800}
+.duo-txt small{font-size:12.5px;color:var(--muted-dark)}
+.duo-get{border:1px solid rgba(233,177,47,.55);background:rgba(233,177,47,.10)}
+.duo-get:hover,.duo-get:focus-visible{background:rgba(233,177,47,.18);border-color:var(--marking)}
+.duo-get .duo-ico{background:var(--marking);color:#141A1F}
+.duo-share{border:1px solid rgba(37,211,102,.55);background:linear-gradient(100deg,rgba(37,211,102,.20),rgba(37,211,102,.05) 70%);box-shadow:none!important}
+.duo-share:hover,.duo-share:focus-visible{background:rgba(37,211,102,.24);border-color:#25D366}
+.duo-share .duo-ico{background:#25D366;border-radius:50%}
+.duo-share .duo-go{margin-inline-start:auto;flex:none;font-size:13px;font-weight:800;color:#062814;background:#25D366;border-radius:999px;padding:7px 13px;white-space:nowrap}
+@media (max-width:380px){.duo-share .duo-go{display:none}}
+
+.get-choices{display:grid;gap:10px;margin:0 0 20px}
+.get-opt{display:flex;align-items:center;gap:12px;width:100%;min-height:62px;padding:11px 14px;border-radius:14px;
+  border:1px solid var(--rule);background:#fff;color:var(--ink);font:inherit;text-align:right;text-decoration:none;cursor:pointer}
+.get-opt:hover,.get-opt:focus-visible{border-color:var(--marking)}
+.get-opt .go-ico{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--marking);color:#141A1F;font-weight:800;font-size:12px}
+.get-opt .go-t{display:flex;flex-direction:column;min-width:0}
+.get-opt .go-t b{font-size:15px}
+.get-opt .go-t small{font-size:12.5px;color:var(--muted)}
+.get-opt.rec{border-color:var(--marking);box-shadow:0 0 0 3px rgba(233,177,47,.16)}
+.get-opt{position:relative}
+.get-opt .go-rec{position:absolute;top:-10px;inset-inline-end:12px;font-size:11px;font-weight:800;background:var(--ink);color:var(--paper);border-radius:999px;padding:3px 9px}
+.get-opt[hidden]{display:none}
+.get-note{margin:-8px 0 16px;font-size:13px;color:var(--alert-ink)}
+:root[data-theme="dark"] .get-opt{background:#1C2126}
+</style>
+<style id="mh-bgv-css">
+/* רקע חי: צומת ישראלי מונפש מאחורי כל הדף (במצב זכוכית) */
+#mh-bgv,#mh-bgv-ctl{display:none}
+html[data-glass="on"] #mh-bg{display:none!important}
+html[data-glass="on"] #mh-bgv{display:block;position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:#0b0e12}
+#mh-bgv .bgv-stage{position:absolute;inset:-3% -3% auto -3%;height:112lvh;height:112vh;transform:translate3d(var(--dx,0px),var(--dy,0px),0);will-change:transform}
+#mh-bgv canvas{display:block;width:100%;height:100%}
+@supports(height:1lvh){#mh-bgv .bgv-stage{height:112lvh}}
+#mh-bgv .bgv-veil{position:absolute;inset:0;background-color:rgba(246,245,240,.30);
+  box-shadow:inset 0 0 18vmax rgba(0,0,0,.10);transition:background-color .9s cubic-bezier(.32,.72,0,1),box-shadow .9s cubic-bezier(.32,.72,0,1)}
+html[data-theme="dark"] #mh-bgv .bgv-veil{background-color:rgba(6,8,11,.28);box-shadow:inset 0 0 22vmax rgba(0,0,0,.55)}
+html.mh-anim body #mh-bgv .bgv-veil{transition:background-color .9s cubic-bezier(.32,.72,0,1),box-shadow .9s cubic-bezier(.32,.72,0,1)!important}
+#mh-bgv.bgv-breathe .bgv-stage{animation:mhBgvBreathe .9s cubic-bezier(.32,.72,0,1)}
+@keyframes mhBgvBreathe{0%{transform:translate3d(var(--dx,0px),var(--dy,0px),0) scale(1)}
+  45%{transform:translate3d(var(--dx,0px),var(--dy,0px),0) scale(1.03)}100%{transform:translate3d(var(--dx,0px),var(--dy,0px),0) scale(1)}}
+html[data-glass="on"] .hero .plan{display:none}
+html[data-glass="on"] .hero,html[data-glass="on"] .hero + .strip{background:transparent!important;border-color:transparent!important}
+html[data-glass="on"][data-theme="dark"] .hero .wrap>div:first-child{text-shadow:0 1px 14px rgba(0,0,0,.65)}
+html[data-glass="on"][data-theme="light"] .hero .wrap>div:first-child{text-shadow:0 1px 14px rgba(255,255,255,.8)}
+#mh-bgv-ctl .bgv-sep{width:1px;margin:6px 3px;background:currentColor;opacity:.2}
+#mh-bgv-ctl .bgv-lab{align-self:center;padding:0 10px 0 6px;font:500 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;opacity:.75;white-space:nowrap}
+@media(max-width:600px){#mh-bgv-ctl .bgv-lab,#mh-bgv-ctl .bgv-r,#mh-bgv-ctl .bgv-sep{display:none}#mh-bgv-ctl button{min-width:32px;height:32px}}
+html[data-glass="on"] .hero :is(a.hq,.hq-dropdown,.duo,.btn:not(.btn-primary)){-webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%)}
+html[data-glass="on"] #mh-bgv-ctl{display:flex;position:fixed;z-index:44;inset-inline-start:max(14px,env(safe-area-inset-right,0px));
+  bottom:calc(16px + env(safe-area-inset-bottom,0px));gap:2px;padding:3px;border-radius:999px;
+  background:var(--mh-ui-bg,rgba(250,250,252,.9));border:.5px solid var(--mh-ui-line,rgba(0,0,0,.12));color:var(--mh-ui-ink,#1c1c1e);
+  -webkit-backdrop-filter:blur(18px) saturate(180%);backdrop-filter:blur(18px) saturate(180%);box-shadow:0 6px 22px rgba(0,0,0,.18);direction:ltr}
+#mh-bgv-ctl button{min-width:34px;height:30px;padding:0 8px;border:0;border-radius:999px;background:none;color:inherit;
+  font:600 12.5px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;cursor:pointer;display:grid;place-items:center}
+#mh-bgv-ctl button[aria-pressed="true"]{background:var(--mh-ui-knob,#fff);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+#mh-bgv-ctl button:focus-visible{outline:2px solid #E9A21F;outline-offset:1px}
+@media print{#mh-bgv,#mh-bgv-ctl{display:none!important}}
+
+/* מעבר רציף: הצומת נמוג בהדרגה לכיוון עמודת הכלים (בלי קו חיתוך) */
+#mh-bgv .bgv-veil::before,#mh-bgv .bgv-veil::after{content:"";position:absolute;inset:0;pointer-events:none;
+  transition:opacity .9s cubic-bezier(.32,.72,0,1)}
+#mh-bgv .bgv-veil::before{--c:244,245,241;opacity:1}
+#mh-bgv .bgv-veil::after{--c:14,17,20;opacity:0}
+html[data-theme="dark"] #mh-bgv .bgv-veil::before{opacity:0}
+html[data-theme="dark"] #mh-bgv .bgv-veil::after{opacity:1}
+#mh-bgv .bgv-veil::before,#mh-bgv .bgv-veil::after{background:linear-gradient(var(--fade-dir,to right),
+  rgba(var(--c),0) 0%,rgba(var(--c),0) 26%,rgba(var(--c),.06) 32%,rgba(var(--c),.16) 38%,rgba(var(--c),.30) 44%,
+  rgba(var(--c),.46) 50%,rgba(var(--c),.60) 56%,rgba(var(--c),.72) 62%,rgba(var(--c),.80) 69%,rgba(var(--c),.85) 78%,rgba(var(--c),.87) 100%)}
+html[dir="ltr"] #mh-bgv .bgv-veil{--fade-dir:to left}
+@media(max-width:899px){#mh-bgv .bgv-veil{--fade-dir:to top}}
+html[data-glass="on"][data-theme="light"] .hero :is(a.hq,.hq-dropdown){background:rgba(255,255,255,.88)!important}
+html[data-glass="on"][data-theme="dark"] .hero :is(a.hq,.hq-dropdown){background:rgba(18,22,28,.84)!important}
+</style>
+</head>
+<body>
+
+<div id="main-content">
+
+    <header class="masthead">
+        <div class="wrap">
+            <a class="mark" href="#top"><span aria-hidden="true"></span>MahAlCo</a>
+            <nav>
+                <a class="btn btn-solid" href="worklog.html">سجل العمل</a>
+                <a href="#flows">مسارات العمل</a>
+                <a href="#catalog">الفهرس</a>
+                <a href="#access">الوصول والدفع</a>
+                <a href="../en/index.html">English</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="top">
+        <div class="wrap">
+            <div>
+                <h1>أدوات وواجهات API لهندسة المرور</h1>
+                <p>مستوى الخدمة والحجم الحرج للتقاطع، معيار المواقف، مسافات الرؤية، أطوال الصفوف والمقاطع النموذجية. تُحمّل ملف عدّ الحركة أو تُدخل البيانات، فتحصل على الحساب مع خطوات الحل. بلا تثبيت، والملفات تبقى عندك.</p>
+
+                <div class="hero-actions hero-primary">
+                    <a class="btn btn-solid pending-route" aria-disabled="true" title="قيد الإنشاء">البحث حسب الإرشادات</a>
+                    <a class="btn btn-line" href="#catalog">الفهرس الكامل</a>
+                </div>
+                <div class="hero-quick">
+                    <span class="hq-label">الأدوات الأكثر طلباً</span>
+                    <nav class="hq-list" aria-label="الأدوات الأكثر طلباً">
+
+                        <a class="hq" href="critical-lane-volume.html">
+                            <small>التقاطعات</small>
+                            <b>مستوى الخدمة والحجم الحرج</b>
+                        </a>
+
+                        <a class="hq" href="sd-tool.html">
+                            <small>الرؤية</small>
+                            <b>مثلثات الرؤية على المخطط</b>
+                        </a>
+
+                        <a class="hq" href="worklog.html">
+                            <small>التنفيذ</small>
+                            <b>دفتر العمل اليومي للموقع</b>
+                        </a>
+
+                        <a class="hq pending-route" aria-disabled="true" title="قيد الإنشاء">
+                            <small>المواقف</small>
+                            <b>معيار المواقف حسب المدينة</b>
+                        </a>
+
+                        <div class="hq-dropdown" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <small>الهندسة</small>
+                            <b>المقطع العرضي</b>
+                            <div class="hq-options" role="menu">
+                                <a class="hq-opt gray" role="menuitem" href="typical-section.html">المقطع النهائي — USDM أبوظبي / RTA GDM</a>
+                                <a class="hq-opt gold" role="menuitem" href="temporary-section.html">عمل مؤقت حضري – تجريبي</a>
+                            </div>
+                        </div>
+
+                        <a class="hq" href="alignment-builder.html">
+                            <small>هندسة</small>
+                            <b>الرسم والتخطيط</b>
+                        </a>
+
+                    </nav>
+                </div>
+
+                <!-- تحميل ومشاركة -->
+                <div class="app-actions app-duo">
+                    <button type="button" class="duo duo-get" data-install onclick="openGetApp()" aria-haspopup="dialog">
+                        <span class="duo-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg></span>
+                        <span class="duo-txt"><b>تحميل التطبيق</b><small>لأندرويد، آيفون والحاسوب</small></span>
+                    </button>
+                    <a class="duo duo-share share-cta" href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AA%D8%B9%D8%B1%D9%81%20%D8%B9%D9%84%D9%89%20MahAlCo%20%E2%80%93%20%D8%A3%D8%AF%D8%A7%D8%A9%20%D8%AD%D8%B3%D8%A7%D8%A8%20%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%3A%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9%20%D9%84%D9%84%D8%AA%D9%82%D8%A7%D8%B7%D8%B9%D8%8C%20%D9%85%D8%B9%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D9%81%D8%8C%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%20%D9%88%D9%85%D8%B3%D8%A7%D9%81%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D8%A4%D9%8A%D8%A9.%20%D9%85%D8%AC%D8%A7%D9%86%D9%8B%D8%A7%20%D9%88%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AA%D8%B5%D9%81%D8%AD%D8%8C%20%D9%8A%D8%B3%D8%AA%D8%AD%D9%82%20%D8%A7%D9%84%D9%86%D8%B8%D8%B1%20https%3A%2F%2Fmahmoudalem95.github.io%2Fmahalco%2Findex-ar.html" target="_blank" rel="noopener"
+                       data-share-text="مرحباً، تعرّف على MahAlCo – أداة حساب لهندسة المرور بالعربية: مستوى الخدمة للتقاطع، معيار المواقف، المقاطع ومسافات الرؤية. مجاناً وفي المتصفح، يستحق النظر" data-share-url="https://mahmoudalem95.github.io/mahalco/ar/index.html">
+                        <span class="duo-ico"><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><path d="M12.6 11.3c-.25-.56-.5-.57-.74-.58h-.63c-.22 0-.57.08-.87.4-.3.33-1.14 1.11-1.14 2.7 0 1.6 1.17 3.14 1.33 3.36.16.22 2.26 3.6 5.58 4.91 2.76 1.09 3.32.87 3.92.82.6-.06 1.94-.79 2.21-1.56.27-.76.27-1.42.19-1.56-.08-.13-.3-.22-.63-.38-.33-.17-1.94-.96-2.24-1.07-.3-.11-.52-.16-.74.16-.22.33-.85 1.07-1.04 1.29-.19.22-.38.25-.71.08-.33-.16-1.39-.51-2.64-1.63-.98-.87-1.63-1.94-1.83-2.27-.19-.33-.02-.5.14-.67.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.57-.08-.16-.72-1.76-1-2.4z" fill="#fff"/><path d="M16 5.2C10 5.2 5.2 10 5.2 16c0 1.9.5 3.7 1.4 5.3L5.2 26.8l5.6-1.4c1.5.8 3.3 1.3 5.2 1.3 6 0 10.8-4.8 10.8-10.8S22 5.2 16 5.2z" fill="none" stroke="#fff" stroke-width="1.8"/></svg></span>
+                        <span class="duo-txt"><b>تعرف مهندساً لا يزال يحسب يدوياً؟</b><small>أرسل له الأدوات – ثانية واحدة</small></span>
+                        <span class="duo-go">إرسال</span>
+                    </a>
+                </div>
+                <div class="tally">
+                    <div><b>13</b>النقل المستدام</div>
+                    <div><b>18</b>الشوارع الحضرية</div>
+                    <div><b>15</b>الطرق بين المدن</div>
+                    <div><b>8</b>التخطيط المشترك</div>
+                </div>
+            </div>
+            <svg class="plan" viewBox="0 0 380 380" role="img" aria-label="منظر علوي لتقاطع رباعي بعلامات الطريق">
+                <rect width="380" height="380" fill="#1B1F24"/>
+                <rect x="0" y="130" width="380" height="120" fill="#2C3138"/>
+                <rect x="130" y="0" width="120" height="380" fill="#2C3138"/>
+                <rect x="130" y="130" width="120" height="120" fill="#2C3138"/>
+                <g stroke="#E9B12F" stroke-width="2.5" stroke-dasharray="14 11">
+                    <line x1="0" y1="190" x2="122" y2="190"/><line x1="258" y1="190" x2="380" y2="190"/>
+                    <line x1="190" y1="0" x2="190" y2="122"/><line x1="190" y1="258" x2="190" y2="380"/>
+                </g>
+                <g stroke="#8C949E" stroke-width="1.5" stroke-dasharray="9 9" opacity=".55">
+                    <line x1="0" y1="160" x2="122" y2="160"/><line x1="258" y1="220" x2="380" y2="220"/>
+                    <line x1="160" y1="258" x2="160" y2="380"/><line x1="220" y1="0" x2="220" y2="122"/>
+                </g>
+                <g fill="#E7E8E3">
+                    <rect x="130" y="123" width="60" height="5"/><rect x="190" y="252" width="60" height="5"/>
+                    <rect x="123" y="190" width="5" height="60"/><rect x="252" y="130" width="5" height="60"/>
+                </g>
+                <g stroke="#4A525C" stroke-width="1.5">
+                    <line x1="0" y1="130" x2="130" y2="130"/><line x1="250" y1="130" x2="380" y2="130"/>
+                    <line x1="0" y1="250" x2="130" y2="250"/><line x1="250" y1="250" x2="380" y2="250"/>
+                    <line x1="130" y1="0" x2="130" y2="130"/><line x1="130" y1="250" x2="130" y2="380"/>
+                    <line x1="250" y1="0" x2="250" y2="130"/><line x1="250" y1="250" x2="250" y2="380"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <section class="strip" aria-label="ما أُضيف حديثاً">
+        <div class="wrap">
+            <details class="strip-fold">
+                <summary class="strip-head"><span class="arrow" aria-hidden="true"></span><h2>أُضيف هذا الشهر</h2><span class="s-n">4 إضافات</span><span class="s-hint">كل شيء يعمل في المتصفح، بلا تثبيت وبلا رفع ملفات إلى خادم</span></summary>
+                <div class="strip-grid">
+            <a class="fresh" href="critical-lane-volume.html">
+                <em>استيراد البيانات</em>
+                <b>ملف عدّ الحركة ← الحجم الحرج للمسار</b>
+                <span>تُحمَّل ملفات XLSX من جهة العدّ. تتعرّف الأداة على الجدول 2.4، وتبني الملف الساعي، وتختار ساعة الذروة وتُدخلها إلى الحساب.</span>
+            </a>
+            <a class="fresh" href="critical-lane-volume.html#forecast">
+                <em>التوقعات</em>
+                <b>مستوى الخدمة للسنوات المستقبلية</b>
+                <span>دورة Webster، توزيع الأخضر، تأخير التحكم حسب HCM، ومصفوفة مستويات الخدمة حسب معدلات النمو — مع سنة التشبع.</span>
+            </a>
+            <a class="fresh pending-route" aria-disabled="true" title="قيد الإنشاء">
+                <em>حاسبة المواقف</em>
+                <b>معيار المواقف حسب اسم المدينة</b>
+                <span>تُدخل اسم المدينة أو المنطقة؛ تُحدِّد الأداة نوع المدينة ومنطقة النقل العام والمنطقة الإدارية تلقائياً — بدل الاختيار اليدوي.</span>
+            </a>
+            <a class="fresh" href="sd-tool.html">
+                <em>مثلثات الرؤية</em>
+                <b>دليل موجَّه داخل الأداة</b>
+                <span>تسع خطوات تُعلِّم نفسها: الخلفية، المعايرة، تعليم المحور والأذرع، وصولاً إلى ورقة A0 للطباعة بمقياس رسم.</span>
+            </a>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <div class="controls">
+        <div class="wrap">
+            <label class="search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                <input id="q" type="search" placeholder="البحث حسب اسم الإجراء أو المعيار (HCM, AASHTO, HSM)" aria-label="البحث في فهرس الإجراءات">
+            </label>
+            <div class="filters" role="group" aria-label="تصفية حسب المجال">
+                <button class="chip" data-cat="all" aria-pressed="true">الكل</button>
+                <button class="chip" data-cat="proper" aria-pressed="false">النقل المستدام</button>
+                <button class="chip" data-cat="urban" aria-pressed="false">حضري</button>
+                <button class="chip" data-cat="rural" aria-pressed="false">بين المدن</button>
+                <button class="chip" data-cat="common" aria-pressed="false">مشترك</button>
+                <button class="chip chip-pending" id="chip-pending" type="button" aria-pressed="false">قيد الإنجاز</button>
+            </div>
+            <p class="count" id="count" aria-live="polite">54 إجراءً</p>
+
+        </div>
+    </div>
+
+    <main class="wrap">
+
+        <div class="tree" id="catalog">
+
+            <details class="branch" id="proper" data-group="proper" open>
+                <summary>
+                    <span class="arrow" aria-hidden="true"></span>
+                    <span class="b-title">النقل المستدام</span>
+                    <span class="b-sub">الأرصفة، مسارات الدراجات، مسارات الحافلات والنقل العام، وتهدئة المرور.</span>
+                    <span class="b-n"><b data-groupcount>13</b> إجراءً</span>
+                </summary>
+                <div class="twigs">
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>الأرصفة والمشاة<span class="t-n" data-twigcount>3</span></summary>
+                        <div class="leaves">
+                            <div class="soon"><h3>تخطيط الأرصفة والمشاة</h3><p>عرض الرصيف، أثاث الشارع، معابر المشاة، وإمكانية الوصول.</p><span class="std">AASHTO / ADA</span></div>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>إرشادات وفحوصات معابر المشاة عالية الطلب<span class="tool-flag">أداة حيّة</span></h3><p>فحص معابر المشاة تحت طلب مرتفع: حجم العابرين، الفجوات في الحركة، الجزيرة الملجأ، أوقات العبور، التبرير لإشارة ضوئية ومعبر مُرفَّع.</p><span class="std">HCM Ch. 20 / Pedestrian Crossing Guidelines</span></a>
+                            <div class="soon"><h3>مستوى خدمة المشاة</h3><p>جودة السير حسب عرض الرصيف، الفصل عن الحركة، وظروف العبور.</p><span class="std">HCM Ch. 16</span></div>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>مسارات الدراجات<span class="t-n" data-twigcount>3</span></summary>
+                        <div class="leaves">
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>اعتبارات وإرشادات لتخطيط مسارات الدراجات<span class="tool-flag">أداة حيّة</span></h3><p>اختيار نوع المسار حسب السرعة والحجم، العرض، الفصل عن الحركة وعن المشاة، المنحدرات، الرصف والأنصاف، ومرور المسار في التقاطع.</p><span class="std">Bikeway Design Guidelines / AASHTO</span></a>
+                            <div class="soon"><h3>تخطيط مسارات الدراجات</h3><p>العرض، المنحدر، الفصل عن الحركة والرصف لمسارات الدراجات الحضرية.</p><span class="std">AASHTO Guide</span></div>
+                            <div class="soon"><h3>مستوى خدمة راكبي الدراجات — أطروحة قيد الإعداد</h3><p>راحة الركوب حسب حالة الرصيف، حجم الحركة، ونسبة المركبات الثقيلة.</p><span class="std">HCM Ch. 16</span></div>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>مسارات الحافلات والنقل العام<span class="t-n" data-twigcount>4</span></summary>
+                        <div class="leaves">
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تبرير مسار الحافلات الحضري</h3><p>معايير تبرير مسار حافلات حضري: حجم الركاب في ساعة الذروة، وتيرة الخطوط، وقت الرحلة الموفَّر، والعرض المتوفر في المقطع.</p><span class="std">Transit Guidelines / TCQSM</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تبرير مسار النقل العام بين المدن</h3><p>مسار نقل عام مفصول ومسار بين المدن: التبرير التشغيلي، المقطع العرضي، والاندماج في التقاطعات والمبادلات.</p><span class="std">Transit Guidelines / Vol. 2</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تحليل مسارات النقل العام</h3><p>تخطيط مسارات النقل العام، المحطات، وسائل السلامة، والترقية.</p><span class="std">AASHTO / APTA</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>مستوى خدمة النقل العام</h3><p>وتيرة الخدمة، مرافق المحطة، والموثوقية على طول الخط.</p><span class="std">HCM Ch. 16</span></a>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>تهدئة المرور وتعدد الوسائط<span class="t-n" data-twigcount>3</span></summary>
+                        <div class="leaves">
+                            <div class="soon"><h3>مناطق تهدئة المرور — قريباً</h3><p>تخطيط منطقة تهدئة كاملة لا وسيلة واحدة: هرمية الشوارع، سرعة التصميم، اختيار الوسائل، وفحص الأثر على أوقات الرحلة وعلى النقل العام.</p><span class="std">Traffic Calming Guidelines</span></div>
+                            <div class="soon"><h3>مستوى الخدمة متعدد الوسائط</h3><p>دمج درجات المشاة والدراجات والنقل العام في نتيجة واحدة للممر.</p><span class="std">HCM Ch. 16</span></div>
+                            <div class="soon"><h3>تحليل التقاطعات متعددة الوسائط</h3><p>دمج المشاة والدراجات والنقل العام والمركبات الخاصة في تقاطع واحد.</p><span class="std">HCM Ch. 16 / 19</span></div>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+
+            <details class="branch" id="urban" data-group="urban">
+                <summary>
+                    <span class="arrow" aria-hidden="true"></span>
+                    <span class="b-title">الشوارع الحضرية</span>
+                    <span class="b-sub">الإرشادات والتخطيط الحضري: الهندسة والتخطيط، وتحليلات التقاطعات والإشارات والمقاطع.</span>
+                    <span class="b-n"><b data-groupcount>18</b> إجراءً</span>
+                </summary>
+                <div class="twigs">
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>الهندسة والتخطيط الحضري<span class="t-n" data-twigcount>8</span></summary>
+                        <div class="leaves">
+                            <a class="leaf" href="typical-section.html"><h3>المقطع العرضي الحضري<span class="tool-flag">أداة حيّة</span></h3><p>عروض المسارات، حافة الرصيف، الرصيف والأكتاف لشارع محلي، جامع، وشرياني.</p><span class="std">USDM أبوظبي / RTA GDM / TR-514</span></a>
+                            <a class="leaf leaf-temp" href="temporary-section.html"><h3>مقطع مؤقت – ترتيبات المرور في موقع العمل<span class="tool-flag gold-flag">ترتيب مؤقت</span><span class="tool-flag">أداة حيّة</span></h3><p>فئة فرعية من المقطع العرضي: تختار الرسم من دليل الإرشادات، تُغلق المسارات وتفحص عروض العبور، شريط اللوحات ومعبر المشاة المؤقت.</p><span class="std">RTA Temporary Traffic Arrangements</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>قيم التصميم حسب إرشادات هيئات الطرق الإماراتية<span class="tool-flag">أداة حيّة</span></h3><p>عروض المسارات، أنصاف الانعطاف، مسارات التباطؤ والتسريع، خلجان الحافلات، وترتيبات المرور المؤقتة – مباشرة من أدلة الطرق.</p><span class="std">RTA / DMT Urban Road Design Manual</span></a>
+                            <a class="leaf" href="sd-tool.html"><h3>مثلثات الرؤية على المخطط<span class="tool-flag">أداة حيّة</span></h3><p>تُعلِّم التقاطع على مخطط مُعايَر وتُخرِج ورقة A0 بمقياس رسم.</p><span class="std">AASHTO Green Book / RTA GDM</span></a>
+                            <div class="soon"><h3>إرشادات السلامة في التصميم</h3><p>مبادئ التصميم الآمن، تقليل نقاط الاحتكاك، وإنارة الطريق.</p><span class="std">HSM / AASHTO</span></div>
+                            <div class="soon"><h3>اختيار وسائل السلامة على حواف الطريق – حضري</h3><p>تبرير الحواجز ووسائل الاحتواء في الشارع الحضري، حسب السرعة، المَعلم، والمسافة من حافة الرصيف.</p><span class="std">AASHTO Roadside Design Guide</span></div>
+                            <div class="soon"><h3>إرشادات اللوحات والإشارات</h3><p>تخطيط لوحات الإرشاد، إشارات التحذير والإلزام حسب MUTCD.</p><span class="std">MUTCD</span></div>
+                            <div class="soon"><h3>تخطيط أنظمة التصريف الحضري</h3><p>تخطيط القنوات، التسرب، المزاريب، ومصافي مياه الأمطار.</p><span class="std">FHWA / AASHTO</span></div>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>التحليلات ومستوى الخدمة<span class="t-n" data-twigcount>10</span></summary>
+                        <div class="leaves">
+                            <a class="leaf" href="critical-lane-volume.html"><h3>الحجم الحرج للمسار<span class="tool-flag">أداة حيّة</span></h3><p>حساب الحجم الحرج بثلاث طرق للمراحل: مداخل مقسّمة، فصل الانعطاف لليسار، ومرحلة ممتدة. مع توقعات سنوية ومستوى خدمة.</p><span class="std">HCM Ch. 19 / 31</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>أداة تحليل التقاطعات<span class="tool-flag">أداة حيّة</span></h3><p>واجهة تفاعلية لحساب وتحليل التقاطع بإشارة ضوئية عبر الواجهة البرمجية.</p><span class="std">HCM Ch. 19</span></a>
+                            <a class="leaf" href="https://junction-los-api.onrender.com/api/v1/pages/signalized-intersection"><h3>تحليل تقاطع بإشارة ضوئية<span class="tool-flag">أداة حيّة</span></h3><p>تأخير التحكم، طول الصف، نسبة الحجم إلى السعة، ومستوى الخدمة لكل مدخل ولل تقاطع كاملاً.</p><span class="std">HCM Ch. 19</span></a>
+                            <a class="leaf" href="https://junction-los-api.onrender.com/api/v1/pages/unsignalized-intersection"><h3>تحليل تقاطع بدون إشارة<span class="tool-flag">أداة حيّة</span></h3><p>التحكم بالتوقف في الاتجاهين وفي جميع الاتجاهات، مع قبول الفجوات حسب الحركة.</p><span class="std">HCM Ch. 20</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تحليل دوار<span class="tool-flag">أداة حيّة</span></h3><p>سعة المدخل، نسبة الحجم إلى السعة، تأخير التحكم، والصف المئوي 95 لكل مدخل.</p><span class="std">HCM Ch. 22</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تحليل المسارات والصفوف<span class="tool-flag">أداة حيّة</span></h3><p>نسبة الحجم إلى السعة، التأخير، والصف المئوي 95 لكل مسار، مقابل طول خليج الانعطاف.</p><span class="std">HCM Ch. 19 / 31</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تنسيق وتوقيت الإشارات<span class="tool-flag">أداة حيّة</span></h3><p>الإزاحات، توزيع الأزمنة، وطول الدورة لمجموعة إشارات منسّقة.</p><span class="std">HCM Ch. 19 / 31</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تحليل مقطع شارع حضري<span class="tool-flag">أداة حيّة</span></h3><p>سرعة السير ومستوى الخدمة في المقطع بين إشارتين.</p><span class="std">HCM Ch. 17</span></a>
+                            <div class="soon"><h3>تحليل ممر حضري</h3><p>سرعة السير ومستوى الخدمة على طول ممر كامل، عبر مقاطع متتالية.</p><span class="std">HCM Ch. 17 / 18</span></div>
+                            <div class="soon"><h3>إدارة إشارات متقدمة</h3><p>كشف الطلب، التكيّف مع الحركة، والإشارات الذكية.</p><span class="std">HCM Ch. 31</span></div>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+
+            <details class="branch" id="rural" data-group="rural">
+                <summary>
+                    <span class="arrow" aria-hidden="true"></span>
+                    <span class="b-title">الطرق بين المدن</span>
+                    <span class="b-sub">الإرشادات والتخطيط بين المدن: الهندسة والمسارات، وتحليلات مستوى الخدمة.</span>
+                    <span class="b-n"><b data-groupcount>15</b> إجراءً</span>
+                </summary>
+                <div class="twigs">
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>الهندسة والمسارات<span class="t-n" data-twigcount>10</span></summary>
+                        <div class="leaves">
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تصميم المنحنى الأفقي<span class="tool-flag">أداة حيّة</span></h3><p>نصف القطر الأدنى حسب سرعة التصميم، الميل العرضي، ومعامل الاحتكاك الجانبي.</p><span class="std">AASHTO Green Book</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تصميم المنحنى الرأسي<span class="tool-flag">أداة حيّة</span></h3><p>أطوال المنحنيات المحدّبة والمقعّرة حسب مسافة الرؤية وراحة السير.</p><span class="std">AASHTO Green Book</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>حساب مسافة الرؤية<span class="tool-flag">أداة حيّة</span></h3><p>مسافة رؤية التوقف، التجاوز، والقرار لمسار معطى.</p><span class="std">AASHTO Green Book</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>المقطع العرضي بين المدن<span class="tool-flag">أداة حيّة</span></h3><p>عروض المسارات والأكتاف مع الميل العرضي حسب نوع الطريق.</p><span class="std">AASHTO Green Book</span></a>
+                            <a class="leaf" href="/ar/?"><h3>السياسات والمقطع<span class="tool-flag">أداة حيّة</span></h3><p>سياسة التخطيط والمقاطع العرضية للطرق بين المدن.</p><span class="std">AASHTO Green Book</span></a>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>قيم التصميم بين المدن<span class="tool-flag">أداة حيّة</span></h3><p>التقاطعات، منحدرات الدخول والخروج، مسارات التباطؤ والتسريع والأكتاف – حسب أدلة الطرق بين المدن.</p><span class="std">MoEI Intercity Road Design Manual</span></a>
+                            <div class="soon"><h3>مقاطع نموذجية بين المدن</h3><p>مقاطع ممرات بمسارات السير، الأكتاف، الجزر الفاصلة، وأشرطة الأمان.</p><span class="std">AASHTO Green Book</span></div>
+                            <div class="soon"><h3>اختيار وسائل السلامة على حواف الطريق – بين المدن</h3><p>تبرير الحواجز، وسائد الفرملة، والحواف، تبعاً للمَعلم، السرعة، والمسافة من الرصيف.</p><span class="std">AASHTO Roadside Design Guide</span></div>
+                            <div class="soon"><h3>تخطيط مسار الطريق في المناطق المفتوحة</h3><p>ملاءمة المسار للطبيعة، الاعتبارات البيئية، المنحدرات، والتصريف.</p><span class="std">AASHTO Green Book</span></div>
+                            <div class="soon"><h3>تبرير مسار الصعود</h3><p>الميل، الطول، أداء الشاحنات وانخفاض السرعة، بما يصل إلى تبرير قابل للدفاع عنه.</p><span class="std">AASHTO Green Book</span></div>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>التحليلات ومستوى الخدمة<span class="t-n" data-twigcount>5</span></summary>
+                        <div class="leaves">
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تحليل مستوى الخدمة<span class="tool-flag">أداة حيّة</span></h3><p>مستوى الخدمة، سرعة السير، وظروف التدفق في المقاطع بين المدن.</p><span class="std">HCM</span></a>
+                            <div class="soon"><h3>تحليل طريق بمسارين</h3><p>كثافة التتابع، نسبة وقت السير في التتابع، السرعة المتوسطة، ومستوى الخدمة.</p><span class="std">HCM Ch. 15</span></div>
+                            <div class="soon"><h3>تحليل مقطع أساسي في طريق سريع</h3><p>الكثافة، السرعة المتوسطة، ومستوى الخدمة في مقاطع بلا تعارض.</p><span class="std">HCM Ch. 21 / 23</span></div>
+                            <div class="soon"><h3>تحليل منشأة طريق سريع</h3><p>مستوى الخدمة للمنشأة بأكملها على مدى مقاطع أساسية متتالية.</p><span class="std">HCM Ch. 21</span></div>
+                            <div class="soon"><h3>موثوقية أوقات السفر على الطريق السريع</h3><p>مؤشر وقت التخطيط، مؤشر هامش الأمان، وتوزيع الموثوقية على مدار سنة.</p><span class="std">HCM Ch. 10</span></div>
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تحليل التداخل في المبادلات والطرق الجامعة-الموزعة<span class="tool-flag">أداة حيّة</span></h3><p>السعة ومستوى الخدمة في مقاطع التداخل، الطرق الجامعة-الموزعة (C-D)، والتداخلات بين المنحدرات في المبادلات.</p><span class="std">HCM Ch. 12 / 14</span></a>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+
+            <details class="branch" id="common" data-group="common">
+                <summary>
+                    <span class="arrow" aria-hidden="true"></span>
+                    <span class="b-title">التخطيط المشترك</span>
+                    <span class="b-sub">دراسات الأثر، الرصف، المواقف، والإدارة.</span>
+                    <span class="b-n"><b data-groupcount>8</b> إجراءً</span>
+                </summary>
+                <div class="twigs">
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>دراسات الأثر والاقتصاد<span class="t-n" data-twigcount>2</span></summary>
+                        <div class="leaves">
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>دراسة الأثر المروري<span class="tool-flag">أداة حيّة</span></h3><p>من توليد الرحلات للمشروع حتى الرأي الكامل، في عملية واحدة.</p><span class="std">HCM &amp; AASHTO</span></a>
+                            <div class="soon"><h3>التحليل الاقتصادي والجدوى</h3><p>تكاليف المستخدم، المنافع، القيمة الحالية الصافية، وترتيب المشاريع.</p><span class="std">AASHTO Red Book</span></div>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>الرصف والجسور<span class="t-n" data-twigcount>3</span></summary>
+                        <div class="leaves">
+                            <div class="soon"><h3>مسار انزلاق مركبة التصميم</h3><p>مسارات الانعطاف والانزلاق لمركبات التصميم القياسية على نصف قطر معطى.</p><span class="std">AASHTO Green Book</span></div>
+                            <div class="soon"><h3>تصميم هيكل الرصف وتفاصيل التصميم</h3><p>سماكة الهيكل حسب طريقة 1993 وحسب التحليل الميكانيكي-التجريبي.</p><span class="std">AASHTO Pavement Structures</span></div>
+                            <div class="soon"><h3>تحليل الانجراف في الجسور</h3><p>احتمال الانجراف العام، حول الأعمدة، وحول الأكتاف عند معبر الوادي.</p><span class="std">HEC-18 / AASHTO LRFD</span></div>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>المواقف ومواقف السيارات<span class="t-n" data-twigcount>1</span></summary>
+                        <div class="leaves">
+                            <a class="leaf pending-route" aria-disabled="true" title="قيد الإنشاء"><h3>تخطيط المواقف واشتراطات المواقف<span class="tool-flag">أداة حيّة</span></h3><p>مواقف على الجانب، مواقف متعددة الطوابق، معايير المواقف، وإمكانية الوصول.</p><span class="std">ITE / AASHTO</span></a>
+                        </div>
+                    </details>
+
+                    <details class="twig">
+                        <summary><span class="arrow" aria-hidden="true"></span>الإدارة والتقنية<span class="t-n" data-twigcount>2</span></summary>
+                        <div class="leaves">
+                            <div class="soon"><h3>إدارة المشاريع المرورية</h3><p>التخطيط، التنفيذ، ضبط التكاليف والجداول الزمنية لمشاريع البنية التحتية.</p><span class="std">PMCM / AASHTO</span></div>
+                            <div class="soon"><h3>تخطيط البنية التحتية الذكية</h3><p>المجسّات، إنترنت الأشياء، اتصال المركبة بالبنية التحتية، وإدارة المرور الذكية.</p><span class="std">FHWA / ITS</span></div>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+
+            <p class="empty" id="empty" hidden>لا يوجد إجراء يطابق البحث. جرّب البحث حسب المعيار — HCM أو AASHTO أو HSM — أو <button type="button" id="reset" style="font:inherit;background:none;border:0;color:#8a6a12;text-decoration:underline;cursor:pointer;padding:0">امسح البحث</button>.</p>
+        </div>
+
+        <div class="part-div" role="separator">اعثر على الأداة<span>حسب دورك</span></div>
+        <section class="routes routes-late" id="who" aria-label="حسب الدور">
+            <div class="r-in">
+                <div class="r-head">
+                    <h2>ما تحتاجه، حسب دورك</h2>
+                    <p>الحسابات نفسها تخدم ست مجموعات تبحث عنها بلغة مختلفة تماماً. اختر دورك واحصل على الأدوات المناسبة لك فقط.</p>
+                </div>
+                <div class="r-grid">
+
+                    <div class="route">
+                        <h3>مهندسو وفنيو المرور</h3>
+                        <span class="who2">فحص التصميم، حساب السعة، التقارير</span>
+                        <p>الحسابات التي تُجرى عادةً يدوياً أو بـ HCS/Sidra: الحجم الحرج، أزمنة الدورة، التأخير، الصف، ومستوى الخدمة — مع عرض خطوات الحل لا النتيجة فقط.</p>
+                        <ul>
+                            <li><a href="critical-lane-volume.html">الحجم الحرج للمسار ومستوى الخدمة</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">سعة وتأخير الدوار</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">طول الصف المئوي 95 لكل مسار</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">توقيت وتنسيق الإشارات</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="route">
+                        <h3>مكاتب التخطيط والهندسة</h3>
+                        <span class="who2">مخرجات للتراخيص والبلديات واللجان</span>
+                        <p>الفحوصات المتكررة في كل مشروع، بصيغة يمكن إرفاقها بالملف: معيار المواقف، مستوى الخدمة لمدخل المشروع، المقطع النموذجي، ومسافات الرؤية.</p>
+                        <ul>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">معيار المواقف حسب الاشتراطات</a></li>
+                            <li><a href="typical-section.html">المقطع العرضي النموذجي</a></li>
+                            <li><a href="sd-tool.html">مثلثات الرؤية على المخطط</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">فحص الأثر المروري</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="route">
+                        <h3>مديرو المشاريع والمساعدون</h3>
+                        <span class="who2">ضبط التصميم، الجداول الزمنية، القرارات</span>
+                        <p>فحص مستقل وسريع لما يصل من المستشارين — قبل أن يدخل الملف أو يُعرض على اللجنة. تقدير، مقارنة بدائل، وتحديد ما ينقص في التقرير.</p>
+                        <ul>
+                            <li><a href="worklog.html">سجل العمل اليومي ولوحة المدير للفريق</a></li>
+                            <li><a href="critical-lane-volume.html#forecast">توقعات مستوى الخدمة لسنوات الهدف</a></li>
+                            <li><a href="critical-lane-volume.html">فحص تقاطع بإشارة من البداية للنهاية</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">قيم التصميم حسب إرشادات هيئات الطرق الإماراتية</a></li>
+                            <li><a href="/">كل الأدوات حسب المجال</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="route">
+                        <h3>المساحون والمسح الخرائطي</h3>
+                        <span class="who2">العمل على المخطط، مقياس الرسم، الأوراق</span>
+                        <p>العمل يبدأ من صورة أو مخطط: يُعاير حسب قطعة بطول معروف، يُعلَّم على الخلفية، ويُصدَّر ورقة A0 بمقياس رسم حقيقي، أو SVG، أو JSON.</p>
+                        <ul>
+                            <li><a href="sd-tool.html">مسافات الرؤية من مخطط معاير</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">المسار الأفقي ومنحنيات الانتقال</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">المسار الرأسي والمنحدرات</a></li>
+                            <li><a href="typical-section.html">مقاطع نموذجية للرسم</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="route">
+                        <h3>المطورون، العقارات والوساطة</h3>
+                        <span class="who2">الجدوى، المواقف، القيمة، والاستخدامات</span>
+                        <p>قبل الشراء أو ترقية الاستخدام: كم موقفاً تطلبه الاشتراطات لهذا الاستخدام في هذه المدينة، وهل يتحمل مدخل المشروع الحركة الإضافية.</p>
+                        <ul>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">كم موقفاً يحتاج العقار</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">حمل مدخل المشروع ومستوى الخدمة</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">فحص أولي للأثر المروري</a></li>
+                            <li><a href="#lead">ما يشترطه الملحق المروري الموقّع</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="route">
+                        <h3>البلديات واللجان</h3>
+                        <span class="who2">فحص التقارير، شروط الترخيص</span>
+                        <p>فحص مستقل لما تم تقديمه: هل جرى الحساب حسب المعيار؟ هل الافتراضات معقولة؟ وما الذي يتغيّر عند تحديث الحجم أو معدل النمو.</p>
+                        <ul>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">فحص معيار المواقف المُقدَّم</a></li>
+                            <li><a href="critical-lane-volume.html">فحص مستوى الخدمة المُقدَّم</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">فحص أطوال الصفوف والخلجان</a></li>
+                            <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">مستوى الخدمة على الشبكة بين المدن</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="part-div" role="separator">كيف تعمل<span>مسارات وبحوث شائعة</span></div>
+        <section class="block" id="flows">
+            <details class="foldable">
+                <summary><span class="arrow" aria-hidden="true"></span>ثلاثة مسارات عمل كاملة<span class="kw-hint">افتح للمسارات الكاملة</span></summary>
+                <div class="fold-body">
+                    <p class="fold-lede">ليس أداة واحدة، بل الطريق من البيانات الخام إلى المُخرَج المُقدَّم. كل خطوة رابط لأداة تُنفِّذها.</p>
+<div class="flow">
+                <h3>من ملف العدّ إلى مستوى الخدمة وسنوات الهدف</h3>
+                <p>المُدخَل هو ملف XLSX المستلم من جهة العدّ. المُخرَج هو مستوى الخدمة في سنة الأساس ومصفوفة مستويات الخدمة لسنوات التوقعات.</p>
+                <ol class="steps2">
+                    <li><b>تحميل العدّ</b><span>يُسحب الملف إلى <a href="critical-lane-volume.html">حاسبة الحجم الحرج</a>. يُتعرَّف على الجدول 2.4 تلقائياً، بما في ذلك أسماء المداخل.</span></li>
+                    <li><b>اختيار ساعة الذروة</b><span>يُعرض الملف الساعي كمخطط؛ ذروة الصباح، العصر أو اليومية بضغطة، وتُعرض الأحجام على مخطط التقاطع.</span></li>
+                    <li><b>الحجم الحرج</b><span>تُحسب ثلاث طرق للمراحل بالتوازي — مداخل مقسّمة، فصل الانعطاف لليسار، ومرحلة ممتدة — وتُختار الأقل.</span></li>
+                    <li><b>التوقعات ومستوى الخدمة</b><span>الدورة، توزيع الأخضر، تأخير HCM، ومستوى الخدمة لكل معدل نمو ولكل سنة هدف، مع سنة التشبع.</span></li>
+                </ol>
+                <p class="flow-foot">لا يوجد ملف عدّ؟ يمكن لصق خلايا الجدول مباشرة من إكسل، أو إدخال 12 حركة يدوياً.</p>
+            </div>
+
+            <div class="flow">
+                <h3>معيار المواقف للترخيص، للبلدية، أو لفحص الجدوى</h3>
+                <p>المُدخَل هو مدينة، استخدام، ومساحة أو عدد وحدات. المُخرَج هو عدد المواقف المطلوبة حسب الاشتراطات، مع التفصيل الذي يقف خلفها.</p>
+                <ol class="steps2 three">
+                    <li><b>المدينة</b><span>يُدخل اسم المدينة في <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">حاسبة المواقف</a>؛ يُحدَّد نوع المدينة، ومنطقة النقل العام، والمنطقة الإدارية تلقائياً، مع إمكانية التجاوز اليدوي.</span></li>
+                    <li><b>الاستخدامات</b><span>يُضاف سطر لكل استخدام — سكن، مكاتب، تجاري، مباني عامة — مع المساحة أو عدد الوحدات.</span></li>
+                    <li><b>النتيجة والشروط</b><span>يُستلَم المعيار، نطاق المسافة من النقل العام، مواقف ذوي الاحتياجات الخاصة، مواقف الدراجات، وملاحظات لجهة الترخيص.</span></li>
+                </ol>
+                <p class="flow-foot">النتيجة حساب حسب الاشتراطات ولا تُغني عن موافقة جهة الترخيص. القرار النهائي من اللجنة.</p>
+            </div>
+
+            <div class="flow">
+                <h3>من مثلثات الرؤية إلى ورقة A0 موقّعة</h3>
+                <p>المُدخَل هو صورة أو مخطط. المُخرَج هو مخطط مسافات رؤية بمقياس رسم، جاهز للطباعة والإرفاق بالملف.</p>
+                <ol class="steps2">
+                    <li><b>الخلفية والمعايرة</b><span>يُحمَّل الملف في <a href="sd-tool.html">أداة مثلثات الرؤية</a> ويُعاير حسب قطعة بطول معروف.</span></li>
+                    <li><b>بيانات التصميم</b><span>حضري أو بين المدن، سرعة الطريق الرئيسي، عدد المسارات، والمسافة إلى حافة الرصيف.</span></li>
+                    <li><b>التعليم</b><span>يُعلَّم محور الطريق — 4–8 نقاط على محور مُنحَنٍ — والأذرع، بما في ذلك خط التوقف الفعلي.</span></li>
+                    <li><b>التصدير</b><span>ورقة A0 بمقياس 1:500 / 1:1000 / 1:2000، أو PNG وSVG وJSON لمواصلة العمل.</span></li>
+                </ol>
+                <p class="flow-foot">تعليم خط التوقف هو التفصيل الذي يغيّر النتيجة أكثر من أي شيء آخر — بدونه يُوضع خط نظر السائق حسب L2 في الجدول.</p>
+            </div>
+
+            <div class="chain">
+                <h3>لماذا يهم ربط الأدوات معاً</h3>
+                <p>ملف العدّ نفسه يُغذّي سلسلة كاملة. كل حلقة تضيف طبقة تتطلّب عادةً نقلاً يدوياً للأرقام بين البرامج — وكل نقل كهذا فرصة لخطأ.</p>
+                <div class="chain-line">
+                    <a href="critical-lane-volume.html">عدّ XLSX</a><i>←</i>
+                    <a href="critical-lane-volume.html">الحجم الحرج</a><i>←</i>
+                    <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">توقيت الإشارة</a><i>←</i>
+                    <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">أطوال الصفوف</a><i>←</i>
+                    <a href="sd-tool.html">مسافات الرؤية</a><i>←</i>
+                    <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">معيار المواقف</a>
+                </div>
+                <ul>
+                    <li>ساعة الذروة تُحدَّد مرة واحدة وتخدم كل الفحوصات بعدها.</li>
+                    <li>طول الصف يُفحص مقابل طول خليج الانعطاف المُخطَّط فعلاً.</li>
+                    <li>توقّع النمو يُعيد تشغيل السلسلة كاملة لسنوات الهدف.</li>
+                    <li>نسبة المركبات الثقيلة والتحويل إلى وحدة مركبة مكافئة تُحسب مرة واحدة لا في كل أداة.</li>
+                </ul>
+                <p class="flow-foot" style="color:var(--muted-dark);margin-top:14px">حالياً يعمل هذا المسار بنقل يدوي بين الأدوات. طبقة تمرير بيانات مشتركة قيد التطوير — <a href="mailto:mahmoudalem95@icloud.com?subject=%D8%B7%D8%A8%D9%82%D8%A9%20%D9%86%D9%82%D9%84%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A8%D9%8A%D9%86%20%D8%A7%D9%84%D8%A3%D8%AF%D9%88%D8%A7%D8%AA" style="color:var(--marking)">تريد أن تكون من الأوائل؟</a></p>
+            </div>
+                </div>
+            </details>
+        </section>
+
+        <section class="block" id="seek">
+            <details class="foldable">
+                <summary><span class="arrow" aria-hidden="true"></span>كيف يُبحث عن هذا في جوجل<span class="kw-hint">افتح لقائمة الصيغ</span></summary>
+                <div class="fold-body">
+                    <p class="fold-lede">كل دور يسأل السؤال الهندسي نفسه بكلمات مختلفة. إن وصلت إلى هنا من إحدى هذه الصيغ — الرابط يقود مباشرة إلى الأداة.</p>
+<div class="seek">
+
+                <section>
+                    <h3>الحساب والسعة</h3>
+                    <ul>
+                        <li><a href="critical-lane-volume.html"><b>كيف يُحسب الحجم الحرج للمسار</b> في تقاطع بإشارة</a></li>
+                        <li><a href="critical-lane-volume.html">حساب <b>مستوى خدمة التقاطع بإشارة</b> حسب HCM</a></li>
+                        <li><a href="critical-lane-volume.html">حساب <b>تأخير التحكم</b> وطول الدورة الأمثل</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>سعة الدوار</b> وزمن التأخير على المدخل</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>طول الصف</b> المئوي 95 وخليج الانعطاف</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">سرعة السير ومستوى الخدمة في <b>مقطع شارع</b></a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>المواقف والاشتراطات</h3>
+                    <ul>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>كم موقفاً</b> أحتاج للشقة</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>معيار المواقف</b> حسب لائحة البلدية</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">معيار المواقف ل<b>المكاتب والتجاري</b> حسب المساحة</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">هل تقع المدينة في <b>منطقة نقل عام</b></a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">عدد <b>مواقف ذوي الاحتياجات الخاصة</b> المطلوب</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">معيار <b>مواقف الدراجات</b> في مبنى جديد</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>الرؤية، الهندسة والمقاطع</h3>
+                    <ul>
+                        <li><a href="sd-tool.html"><b>مثلث الرؤية</b> في التقاطع — كيف يُعلَّم</a></li>
+                        <li><a href="sd-tool.html">حساب <b>مسافة الرؤية</b> للتوقف وللعبور</a></li>
+                        <li><a href="typical-section.html"><b>مقطع نموذجي</b> لشارع حضري ولطريق</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">نصف القطر الأدنى و<b>منحنى الانتقال</b></a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>الميل الطولي</b> والمنحنى الرأسي</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>قيم التصميم</b> حسب إرشادات هيئات الطرق الإماراتية</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>الريادة، العقارات والتقييم</h3>
+                    <ul>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>الجدوى المرورية</b> للعقار قبل الشراء</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">المواقف المطلوبة ل<b>تغيير استخدام</b> مبنى قائم</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء"><b>الملحق المروري</b> — ماذا يشمل</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">هل يتحمّل <b>مدخل المشروع</b> الإضافة</a></li>
+                        <li><a href="#lead">من يوقّع على <b>تقرير المرور</b> للجنة</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">معيار المواقف حسب <b>المدينة والمنطقة</b></a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>إدارة المشاريع والضبط</h3>
+                    <ul>
+                        <li><a href="critical-lane-volume.html#forecast"><b>توقعات المرور</b> لسنة الهدف وسنة التشبع</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">فحص <b>تقرير مستشار المرور</b> بشكل مستقل</a></li>
+                        <li><a href="critical-lane-volume.html">هل يلزم <b>إشارة ضوئية</b> وما أزمنة الدورة</a></li>
+                        <li><a href="/">مقارنة <b>بدائل التصميم</b> للتقاطع</a></li>
+                        <li><a class="pending-route" aria-disabled="true" title="قيد الإنشاء">مستوى الخدمة على <b>طريق بين المدن</b></a></li>
+                        <li><a href="#access">ربط الحسابات <b>بنظام المكتب</b></a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>القياس، المسح والمخططات</h3>
+                    <ul>
+                        <li><a href="sd-tool.html"><b>معايرة الصورة</b> لمقياس رسم حقيقي</a></li>
+                        <li><a href="sd-tool.html">الرسم على <b>صورة جوية</b> وتصدير SVG</a></li>
+                        <li><a href="sd-tool.html">إخراج <b>ورقة A0</b> بمقياس 1:500</a></li>
+                        <li><a href="typical-section.html">مقطع عرضي <b>لمخطط تطوير</b></a></li>
+                        <li><a href="typical-section.html">تخطيط <b>طريق بين المدن</b> — قيم التصميم</a></li>
+                    </ul>
+                </section>
+
+            </div>
+                </div>
+            </details>
+        </section>
+
+        <div class="part-div" role="separator">الخدمة، الوصول والاشتراكات<span>ما هو مجاني، ما هو مدفوع، والواجهة البرمجية</span></div>
+        <section class="block" id="lead">
+            <div class="block-head">
+                <h2>ماذا تفعل الأدوات، وماذا يبقى بحاجة إلى مهندس</h2>
+                <p>فصل كامل بين ما تحصل عليه وحدك هنا وما يستلزم توقيعاً مهنياً — حتى لا تُقدّم مستنداً يعود من اللجنة.</p>
+            </div>
+            <div class="tier">
+                <div><h3>ما تحصل عليه هنا، فوراً وبلا مقابل</h3><p>حساب حسب المعيار مع عرض خطوات الحل: معيار المواقف، الحجم الحرج، أزمنة المراحل، التأخير، الصف، مستوى الخدمة، مسافات الرؤية، والتوقعات لسنوات الهدف. كل شيء يعمل في المتصفح؛ ملفاتك لا تُرسَل إلى خادم.</p></div>
+                <span class="rate">فحص ذاتي</span>
+                <a class="price" href="#flows">لمسارات العمل</a>
+            </div>
+            <div class="tier">
+                <div><h3>ما يستلزم مهندس مرور</h3><p>الملحق المروري الموقّع، تقرير السلامة، دراسة الأثر المروري، اعتماد المخطط أمام الجهة واللجنة، وتحديد سيناريوهات التصميم. الأدوات تعطي الأرقام؛ المسؤولية المهنية والتوقيع لمهندس معتمد.</p></div>
+                <span class="rate">مرافقة مهنية</span>
+                <a class="price buy" href="mailto:mahmoudalem95@icloud.com?subject=%D9%85%D9%84%D8%AD%D9%82%20%D9%85%D8%B1%D9%88%D8%B1%D9%8A%20%2F%20%D9%85%D8%B1%D8%A7%D9%81%D9%82%D8%A9%20%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9">تواصل معنا</a>
+            </div>
+            <p class="note">مهندس نقل، معتمد من الجامعة التقنية. للاستفسارات المهنية: <a href="mailto:mahmoudalem95@icloud.com">mahmoudalem95@icloud.com</a> · <a href="tel:+972546528572">‎+972-546-528572</a></p>
+        </section>
+
+        <section class="block" id="access">
+            <div class="block-head">
+                <h2>الوصول والدفع</h2>
+                <p>كل إجراء متاح للتشغيل في المتصفح. المفتاح يرفع حد الطلبات ويتيح إرسال الطلبات مباشرة إلى الواجهة البرمجية.</p>
+            </div>
+
+            <div class="tier">
+                <div><h3>تجريبي</h3><p>مفتاح تجريبي لأسبوعين، بلا دفع وبلا بطاقة ائتمان. أرسل بريداً واحصل على المفتاح.</p></div>
+                <span class="rate">30 طلباً في الساعة</span>
+                <a class="price" href="mailto:Mahmoudalem95@icloud.com?subject=%D8%B7%D9%84%D8%A8%20%D9%85%D9%81%D8%AA%D8%A7%D8%AD%20%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A">طلب مفتاح</a>
+            </div>
+            <div class="tier">
+                <div><h3>المطورون</h3><p>مفتاح API للعمل الأولي ولل تقاطع الواحد.</p></div>
+                <span class="rate">120 طلباً في الساعة</span>
+                <a class="price buy" href="https://paypal.me/MahmoudAlem" target="_blank" rel="noopener">‏$19 شهرياً</a>
+            </div>
+            <div class="tier">
+                <div><h3>المكتب</h3><p>لفحوصات الممرات والسيناريوهات على مدى شبكة كاملة.</p></div>
+                <span class="rate">600 طلب في الساعة</span>
+                <a class="price buy" href="https://paypal.me/MahmoudAlem" target="_blank" rel="noopener">‏$79 شهرياً</a>
+            </div>
+            <div class="tier">
+                <div><h3>المؤسسات</h3><p>بلا حد للطلبات، مع جهة اتصال لأسئلة المنهجية.</p></div>
+                <span class="rate">بلا حدود</span>
+                <a class="price" href="mailto:Mahmoudalem95@icloud.com">تواصل معنا</a>
+            </div>
+            <p class="note">كيف يتم الدفع: الدفع عبر PayPal على رابط السعر، ثم إرسال بريد من العنوان الذي دفع. يُصدَر المفتاح يدوياً ويعود في البريد نفسه، عادة في غضون يوم عمل. يمكن الإلغاء في أي وقت بالبريد.</p>
+        </section>
+
+        <section class="block" id="connect">
+            <div class="block-head">
+                <h2>ربط الكود – واجهة برمجية للمطورين</h2>
+                <p>اتصل بالواجهة البرمجية ودمج الحسابات في مشاريعك. أدخل مفتاح API أو اطلب مفتاحاً بالبريد.</p>
+            </div>
+            <div class="connect-area">
+                <div class="input-group">
+                    <label for="api-key-input">مفتاح API:</label>
+                    <input type="text" id="api-key-input" placeholder="أدخل مفتاح API الخاص بك">
+                    <button id="connect-api-btn" type="button">اتصال</button>
+                </div>
+                <p class="connect-msg" id="connect-msg" hidden></p>
+                <p class="hint">للحصول على مفتاح API، <a href="mailto:Mahmoudalem95@icloud.com?subject=API%20Key">أرسل بريداً</a> أو اشترك من <a href="#access">الوصول والدفع</a>.</p>
+                <div class="code-sample">
+                    <p><strong>مثال الاتصال:</strong></p>
+                    <p><code>fetch('https://api.mahalco.com/v1/calculate', { method: 'POST', headers: { 'Authorization': 'Bearer YOUR_API_KEY' }, body: JSON.stringify(data) })</code></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="part-div" role="separator">ما التالي والمساعدة<span>قيد التطوير والأسئلة الشائعة</span></div>
+        <section class="block" id="coming">
+            <div class="block-head">
+                <h2>قيد التطوير – إضافات مدعومة بالذكاء الاصطناعي</h2>
+                <p>تطبيقات مدعومة بالذكاء الاصطناعي لتخطيط النقل. التعبير عن الاهتمام المبكر يمنح وصولاً مبكراً.</p>
+                <span class="n">3 قيد التطوير</span>
+            </div>
+            <div class="soon"><h3>تخطيط إشارات تلقائي مدعوم بالذكاء الاصطناعي</h3><p>إخراج مخطط DWG كامل للإشارات من صورة جوية فقط. دقة عالية مع عيّنات ملفات DWG.</p><span class="std">Early Demand – تواصل معنا</span></div>
+            <div class="soon"><h3>مولّد مسافات الرؤية التلقائي</h3><p>إنشاء مخطط مسافات الرؤية (Sight Distance) من صورة جوية — للدوارات الحضرية وبين المدن.</p><span class="std">Early Demand – تواصل معنا</span></div>
+            <div class="soon"><h3>مولّد المقاطع النموذجية بالذكاء الاصطناعي</h3><p>إنشاء مقاطع نموذجية ذكية في دقائق من بيانات خطوط التخطيط.</p><span class="std">قيد التطوير</span></div>
+            <p class="note">للتعبير عن الاهتمام المبكر، <a href="mailto:Mahmoudalem95@icloud.com">أرسل بريداً</a> أو اتصل.</p>
+        </section>
+
+        <section class="block" id="faq">
+            <details class="foldable">
+                <summary><span class="arrow" aria-hidden="true"></span>أسئلة متكررة<span class="kw-hint">افتح للأسئلة والأجوبة</span></summary>
+                <div class="fold-body">
+                    <p class="fold-lede">أجوبة قصيرة لأسئلة تصلنا بالبريد وفي البحث.</p>
+<div class="qa">
+                <details><summary><span class="arrow" aria-hidden="true"></span>كيف يُحسب الحجم الحرج للمسار في تقاطع بإشارة ضوئية؟</summary><div class="a">يُقسَّم كل مدخل إلى مجموعات مسارات، ويُحسب الحجم لكل مسار لكل حركة، ثم تُختار لكل مرحلة مجموعة المسارات الأكثر ازدحاماً. مجموع القيم الحرجة لجميع المراحل هو الحجم الحرج للتقاطع. حاسبة الحجم الحرج تُشغّل ثلاث طرق للمراحل بالتوازي — مداخل مقسّمة، فصل الانعطاف لليسار، ومرحلة ممتدة — وتختار الأقل بينها.</div></details>
+                <details><summary><span class="arrow" aria-hidden="true"></span>هل يمكن تحميل ملف عدّ الحركة مباشرة إلى الحساب؟</summary><div class="a">نعم. يُحمَّل ملف XLSX من جهة العدّ؛ تتعرّف الأداة على الجدول 2.4 (أو 2.2، 2.3، 2.1)، وتبني الملف الساعي، وتعرض أحجام ساعة الذروة على مخطط التقاطع وتُدخلها إلى الحساب. إن كان هيكل الملف مختلفاً، يمكن لصق خلايا الجدول مباشرة من إكسل.</div></details>
+                <details><summary><span class="arrow" aria-hidden="true"></span>كيف يُحدَّد معيار المواقف للعقار؟</summary><div class="a">حسب اشتراطات البلدية المعنية — بدالة على الاستخدام، أو المساحة، أو عدد الوحدات، ونوع المدينة ومنطقة النقل العام فيها. في حاسبة المواقف يُدخل اسم المدينة ونوعها، فتُحدَّد منطقة النقل العام والمنطقة الإدارية تلقائياً، مع إمكانية التجاوز اليدوي. النتيجة حساب حسب الاشتراطات ولا تُغني عن قرار جهة الترخيص.</div></details>
+                <details><summary><span class="arrow" aria-hidden="true"></span>كيف يُحسب مستوى الخدمة لسنة هدف مستقبلية؟</summary><div class="a">تُرفع جميع الحركات بمعدل نمو سنوي بفائدة مركّبة، ثم تُعاد سلسلة الحساب كاملة — الحجم الحرج، طول الدورة، توزيع الأخضر، والتأخير — ولا يُضرب التأخير بمعدل النمو. التأخير غير خطي مع الحجم، لذا فإن الضرب المباشر مضلّل خصوصاً حول نسبة الطلب/السعة 1.0.</div></details>
+                <details><summary><span class="arrow" aria-hidden="true"></span>هل تُغني النتائج عن ملحق مروري موقّع؟</summary><div class="a">لا. تُجري الأدوات الحساب حسب المعيار وتعرض خطوات الحل، بحيث يمكن فحصها. أما الملحق المروري، أو تقرير الأثر المروري، أو تقرير السلامة فيتطلب مهندس مرور معتمداً يتحمل المسؤولية المهنية عن الافتراضات والنتائج.</div></details>
+                <details><summary><span class="arrow" aria-hidden="true"></span>حسب أي معيار تعمل الأدوات؟</summary><div class="a">‏HCM للسعة ومستوى الخدمة والتأخير والصفوف؛ AASHTO Green Book للتصميم الهندسي؛ HSM للسلامة. وحيث يوجد إرشاد إماراتي إلزامي — اشتراطات المواقف، أدلة تصميم الشوارع الحضرية، أدلة تصميم الطرق بين المدن، وأدلة الدوارات — تعمل الأداة وفقه وتذكر ذلك.</div></details>
+                <details><summary><span class="arrow" aria-hidden="true"></span>هل أحتاج إلى تثبيت برنامج أو رفع ملفات إلى خادم؟</summary><div class="a">لا. جميع الأدوات تعمل في المتصفح، بما في ذلك قراءة ملف إكسل والتعليم على المخطط. يمكن إضافة الموقع إلى الشاشة الرئيسية واستخدامه كتطبيق. الواجهة البرمجية موجودة بشكل منفصل وتستهدف من يريد دمج الحسابات في أنظمة المكتب.</div></details>
+            </div>
+                </div>
+            </details>
+        </section>
+
+        <details class="keywords">
+            <summary><span class="arrow" aria-hidden="true"></span>مجالات العمل، البرامج، الجهات والمعايير<span class="kw-hint">افتح للقائمة الكاملة</span></summary>
+            <div class="kw-body">
+                <p>استجابة مهنية لكل مجالات الهندسة – في المتصفح، عبر الواجهة البرمجية، أو بالدمج مع أنظمة شركتك.</p>
+                <span class="keyword-cat">برامج تحليل المرور والمحاكاة</span>
+                <div><span class="tag tag-soft">PTV Vissim</span><span class="tag tag-soft">PTV Visum</span><span class="tag tag-soft">Synchro</span><span class="tag tag-soft">SimTraffic</span><span class="tag tag-soft">TransModeler</span><span class="tag tag-soft">Aimsun</span><span class="tag tag-soft">SIDRA Intersection</span><span class="tag tag-soft">Civil 3D</span><span class="tag tag-soft">InRoads</span><span class="tag tag-soft">MX</span><span class="tag tag-soft">GIS / نظم المعلومات الجغرافية</span><span class="tag tag-soft">محاكاة المرور</span><span class="tag tag-soft">نموذج النقل</span></div>
+                <span class="keyword-cat">الجهات الوطنية والمحلية وشركات البنية التحتية</span>
+                <div><span class="tag tag-agency">وزارة الطاقة والبنية التحتية</span><span class="tag tag-agency">هيئة الطرق والمواصلات – دبي</span><span class="tag tag-agency">دائرة البلديات والنقل – أبوظبي</span><span class="tag tag-agency">مركز النقل المتكامل – أبوظبي</span><span class="tag tag-agency">بلدية دبي</span><span class="tag tag-agency">هيئة الطرق والمواصلات – الشارقة</span><span class="tag tag-agency">بلدية الشارقة</span><span class="tag tag-agency">بلدية عجمان</span><span class="tag tag-agency">بلدية رأس الخيمة</span><span class="tag tag-agency">بلدية الفجيرة</span><span class="tag tag-agency">بلدية أم القيوين</span><span class="tag tag-agency">الاتحاد للقطارات</span><span class="tag tag-agency">مؤسسة الإمارات للطاقة النووية</span><span class="tag tag-agency">سلطة منطقة العقبة</span></div>
+                <span class="keyword-cat">الإرشادات والمعايير والمراجع المهنية</span>
+                <div><span class="tag tag-guideline">HCM</span><span class="tag tag-guideline">AASHTO Green Book</span><span class="tag tag-guideline">HSM</span><span class="tag tag-guideline">MUTCD</span><span class="tag tag-guideline">دليل تصميم الطرق – وزارة الطاقة والبنية التحتية</span><span class="tag tag-guideline">دليل تصميم الطرق الحضرية – RTA دبي</span><span class="tag tag-guideline">دليل تصميم الطرق – DMT أبوظبي</span><span class="tag tag-guideline">اشتراطات المواقف – بلدية دبي</span><span class="tag tag-guideline">لائحة المواقف – أبوظبي</span><span class="tag tag-guideline">دليل ترتيبات المرور المؤقتة</span><span class="tag tag-guideline">دليل اللوحات والإشارات</span></div>
+                <span class="keyword-cat">التصميم الهندسي والمقاطع والبنية التحتية</span>
+                <div><span class="tag tag-geo">التصميم الأفقي والرأسي</span><span class="tag tag-geo">منحنيات الانتقال (كلوثويد)</span><span class="tag tag-geo">الميل العرضي الفائق</span><span class="tag tag-geo">الميل الطولي</span><span class="tag tag-geo">الدوارات</span><span class="tag tag-geo">مجال الرؤية</span><span class="tag tag-geo">المقاطع النموذجية</span><span class="tag tag-geo">الأكتاف وخلجان التوقف</span><span class="tag tag-geo">قنوات التصريف</span><span class="tag tag-geo">الجزر الفاصلة</span><span class="tag tag-geo">مسارات الحافلات</span><span class="tag tag-geo">مسارات الدراجات</span><span class="tag tag-geo">محطات الحافلات</span></div>
+                <span class="keyword-cat">المشاريع، المناقصات، الوظائف والإدارة</span>
+                <div><span class="tag tag-project">مناقصات البنية التحتية والتطوير</span><span class="tag tag-project">مناقصات الرصف</span><span class="tag tag-project">مناقصات إطارية لمستشاري المرور</span><span class="tag tag-project">مناقصات التطوير الحضري</span><span class="tag tag-project">مهندس مرور أول</span><span class="tag tag-project">مخطّط نقل حضري</span><span class="tag tag-project">مهندس طرق وبنية تحتية</span><span class="tag tag-project">مدير مشروع بنية تحتية (PMCM)</span><span class="tag tag-project">مستشار السلامة على الطرق</span><span class="tag tag-project">مهندس في بلدية</span><span class="tag tag-project">إدارة المشاريع</span><span class="tag tag-project">حصر ميداني</span></div>
+                <span class="keyword-cat">المخططات الهندسية، الترخيص والطبوغرافيا</span>
+                <div><span class="tag tag-plan">التخطيط العمراني</span><span class="tag tag-plan">المخططات التفصيلية للبنية التحتية</span><span class="tag tag-plan">مخطط التصريف والتطوير</span><span class="tag tag-plan">جدول الكميات</span><span class="tag tag-plan">الميزانية التقديرية</span><span class="tag tag-plan">خريطة المسح</span><span class="tag tag-plan">المقاطع الطولية والعرضية</span><span class="tag tag-plan">نموذج ثلاثي الأبعاد</span><span class="tag tag-plan">مخططات الهدم المؤقت</span><span class="tag tag-plan">التصاريح</span></div>
+            </div>
+        </details>
+
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="f-grid">
+                <div><h4>MahAlCo</h4><p>أدوات حساب وتحليل هندسية معتمدة على معايير دولية وإماراتية. جميع النتائج تخضع لفحص مهني من مهندس معتمد.</p></div>
+                <div><h4>التواصل</h4><ul><li>📧 <a href="mailto:mahmoudalem95@icloud.com">mahmoudalem95@icloud.com</a></li><li>📞 <a href="tel:+972546528572">+972-546-528572</a></li><li><a href="legal/policy.html">سياسة الخصوصية وشروط الاستخدام</a></li></ul></div>
+                <div><h4>كيف يتم الدفع</h4><ul><li><a class="pay-link" href="https://paypal.me/MahmoudAlem" target="_blank" rel="noopener">الدفع عبر PayPal</a></li><li>أرسل بريداً من العنوان الذي دفع</li><li>يعود المفتاح يدوياً في غضون يوم عمل</li><li><a href="#access">جميع المسارات والأسعار</a></li></ul></div>
+            </div>
+            <div class="f-bottom">
+                <a href="#who">حسب الدور</a>
+                <a href="#flows">مسارات العمل</a>
+                <a href="#catalog">الفهرس</a>
+                <a href="critical-lane-volume.html">مستوى الخدمة والحجم الحرج</a>
+                <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">معيار المواقف</a>
+                <a href="sd-tool.html">مثلثات الرؤية</a>
+                <a href="typical-section.html">المقطع النموذجي</a>
+                <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">أداة التقاطعات</a>
+                <a class="pending-route" aria-disabled="true" title="قيد الإنشاء">قيم التصميم</a>
+                <a href="worklog.html">سجل العمل</a>
+                <a href="/">جميع الواجهات</a>
+                <a href="#faq">الأسئلة</a>
+                <a href="../en/index.html">English</a>
+                <a href="legal/policy.html">السياسات</a>
+                <span class="who">Mahmoud Alem &copy; 2026</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- PWA Install Dialog -->
+<dialog id="install-dialog" class="install-dialog">
+    <div class="install-header">
+        <h3>تحميل التطبيق</h3>
+        <button class="install-close" onclick="document.getElementById('install-dialog').close()" aria-label="إغلاق">&times;</button>
+    </div>
+    <div class="install-body">
+        <p class="install-intro">اختر كيف تُحمِّل. على هذا الجهاز تم تحديد الخيار المناسب، والأدوات تعمل أيضاً بلا اتصال دائم.</p>
+        <div class="get-choices">
+            <button type="button" class="get-opt" id="getPwa" onclick="installApp(true)">
+                <span class="go-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg></span>
+                <span class="go-t"><b>التثبيت من المتصفح</b><small>أيقونة على الشاشة الرئيسية، تُفتح بملء الشاشة وتُحدَّث تلقائياً</small></span>
+            </button>
+            <a class="get-opt" id="getApk" href="https://github.com/mahmoudalem95/mahalco/raw/refs/heads/main/app-release-signed.apk" download>
+                <span class="go-ico">APK</span>
+                <span class="go-t"><b>ملف APK لأندرويد</b><small>تحميل مباشر وتثبيت يدوي للتطبيق</small></span>
+            </a>
+        </div>
+        <p class="get-note" id="getNote" hidden>هذا المتصفح لا يسمح بالتثبيت بضغطة – نفّذ الخطوات التالية.</p>
+
+
+        <div class="platform-block">
+            <span class="platform-tag">iOS / Safari</span>
+            <div class="install-step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    <b>اضغط زر المشاركة</b>
+                    <span>الزر في أسفل الشاشة (مربع بسهم للأعلى).</span>
+                </div>
+            </div>
+            <div class="install-step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    <b>اسحب واختر "إضافة إلى الشاشة الرئيسية"</b>
+                    <span>أكّد الإضافة.</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="install-divider">
+
+        <div class="platform-block">
+            <span class="platform-tag">Android / Chrome</span>
+            <div class="install-step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    <b>اضغط قائمة النقاط الثلاث</b>
+                    <span>القائمة في الزاوية العلوية اليمنى.</span>
+                </div>
+            </div>
+            <div class="install-step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    <b>اختر "إضافة إلى الشاشة الرئيسية"</b>
+                    <span>أو "تثبيت التطبيق".</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<script>
+/* PWA Install Dialog Handling */
+document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.getElementById('install-dialog');
+    if (dialog) {
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) dialog.close();
+        });
+    }
+});
+
+/* Dropdown لقائمة «المقطع العرضي» */
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.hq-dropdown');
+    dropdowns.forEach(dropdown => {
+        const toggle = function(e) {
+            if (e.target.closest('.hq-opt')) return;
+            e.stopPropagation();
+            const isOpen = dropdown.classList.toggle('open');
+            dropdown.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        };
+        dropdown.addEventListener('click', toggle);
+        dropdown.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggle(e);
+            } else if (e.key === 'Escape') {
+                dropdown.classList.remove('open');
+                dropdown.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    document.addEventListener('click', function() {
+        dropdowns.forEach(d => {
+            d.classList.remove('open');
+            d.setAttribute('aria-expanded', 'false');
+        });
+    });
+});
+
+/* تمييز الإجراءات التي لم تكتمل بعد */
+(function() {
+    document.querySelectorAll('#catalog .soon').forEach(d => {
+        d.classList.add('pending');
+        const h = d.querySelector('h3');
+        if (h && !h.querySelector('.flag-pending')) {
+            const flag = document.createElement('span');
+            flag.className = 'flag-pending';
+            flag.textContent = 'قيد الإنجاز';
+            h.appendChild(flag);
+        }
+        d.setAttribute('title', 'الإجراء قيد الإنجاز — سيُضاف إلى الفهرس لاحقاً');
+    });
+})();
+
+(function() {
+    const q = document.getElementById('q');
+    const countEl = document.getElementById('count');
+    const empty = document.getElementById('empty');
+    const reset = document.getElementById('reset');
+    const chips = [...document.querySelectorAll('.chip[data-cat]')];
+    const pendingChip = document.getElementById('chip-pending');
+    const branches = [...document.querySelectorAll('.branch')];
+    let cat = 'all', pendingOnly = false, first = true;
+
+    document.querySelectorAll('.leaf, #catalog .soon').forEach(l => { l.dataset.text = l.textContent.toLowerCase(); });
+
+    function apply() {
+        const term = q.value.trim().toLowerCase();
+        const filtering = term !== '' || cat !== 'all' || pendingOnly;
+        let total = 0, pend = 0;
+
+        branches.forEach(b => {
+            const inCat = (cat === 'all' || b.dataset.group === cat);
+            let bShown = 0;
+            b.querySelectorAll('.twig').forEach(t => {
+                let tShown = 0;
+                t.querySelectorAll('.leaf, .soon').forEach(l => {
+                    const isPending = l.classList.contains('soon') || l.classList.contains('pending-route');
+                    const ok = inCat && (term === '' || l.dataset.text.includes(term)) && (!pendingOnly || isPending);
+                    l.hidden = !ok;
+                    if (ok) { tShown++; if (isPending) pend++; }
+                });
+                t.hidden = tShown === 0;
+                const tc = t.querySelector('[data-twigcount]');
+                if (tc) tc.textContent = tShown;
+                if (term !== '' && tShown > 0) t.open = true;
+                else if (term === '') t.open = false;
+                bShown += tShown;
+            });
+            b.hidden = bShown === 0;
+            const bc = b.querySelector('[data-groupcount]');
+            if (bc) bc.textContent = bShown;
+            if (filtering && bShown > 0) b.open = true;
+            else if (!filtering && !first) b.open = false;
+            total += bShown;
+        });
+
+        countEl.innerHTML = (total === 1 ? 'إجراء واحد' : total + ' إجراءً')
+            + (pend > 0 ? ' · <span class="pend">' + pend + ' قيد الإنجاز</span>' : '');
+        empty.hidden = total !== 0;
+        first = false;
+    }
+
+    q.addEventListener('input', apply);
+    chips.forEach(c => c.addEventListener('click', () => {
+        cat = c.dataset.cat;
+        chips.forEach(o => o.setAttribute('aria-pressed', String(o === c)));
+        apply();
+    }));
+    if (pendingChip) pendingChip.addEventListener('click', () => {
+        pendingOnly = !pendingOnly;
+        pendingChip.setAttribute('aria-pressed', String(pendingOnly));
+        apply();
+    });
+    if (reset) reset.addEventListener('click', () => {
+        q.value = '';
+        cat = 'all';
+        pendingOnly = false;
+        if (pendingChip) pendingChip.setAttribute('aria-pressed', 'false');
+        chips.forEach(o => o.setAttribute('aria-pressed', String(o.dataset.cat === 'all')));
+        apply();
+        q.focus();
+    });
+
+    document.querySelectorAll('[data-open]').forEach(a => a.addEventListener('click', () => {
+        const b = document.getElementById(a.dataset.open);
+        if (b) { b.hidden = false; b.open = true; }
+    }));
+    if (location.hash) {
+        const b = document.querySelector('.branch' + location.hash);
+        if (b) b.open = true;
+    }
+    apply();
+})();
+
+(function() {
+    const btn = document.getElementById('connect-api-btn');
+    const input = document.getElementById('api-key-input');
+    const msg = document.getElementById('connect-msg');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        const v = input.value.trim();
+        msg.hidden = false;
+        if (!v) { msg.textContent = 'أدخل مفتاح API لحفظه.'; msg.style.color = '#8a2f2f'; input.focus(); return; }
+        try { sessionStorage.setItem('mahalco_api_key', v); } catch (e) {}
+        msg.textContent = 'تم حفظ المفتاح في المتصفح للراحة.';
+        msg.style.color = '#2f6b3f';
+    });
+})();
+</script>
+
+<script>
+/* مشاركة: على الأجهزة التي تدعم مشاركة النظام — قائمة المشاركة؛ وإلا واتساب */
+document.querySelectorAll('a.share-cta').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+        if (!navigator.share) return;
+        e.preventDefault();
+        navigator.share({
+            title: document.title,
+            text: a.getAttribute('data-share-text'),
+            url: a.getAttribute('data-share-url')
+        }).catch(function () { window.open(a.href, '_blank', 'noopener'); });
+    });
+});
+</script>
+
+<script>
+/* تحميل التطبيق: زر واحد. */
+(function () {
+    var deferred = null;
+    var ua = navigator.userAgent || '';
+    var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/i.test(ua);
+    window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; });
+    function mark() {
+        var pwa = document.getElementById('getPwa'), apk = document.getElementById('getApk');
+        if (!pwa || !apk) return;
+        pwa.classList.remove('rec'); apk.classList.remove('rec');
+        [pwa, apk].forEach(function (el) { var r = el.querySelector('.go-rec'); if (r) r.remove(); });
+        apk.hidden = isIOS;
+        var best = isAndroid && !deferred ? apk : pwa;
+        best.classList.add('rec');
+        var tag = document.createElement('span'); tag.className = 'go-rec'; tag.textContent = 'المناسب لجهازك';
+        best.appendChild(tag);
+        document.querySelectorAll('.platform-block').forEach(function (b) {
+            var t = (b.querySelector('.platform-tag') || {}).textContent || '';
+            b.hidden = (isIOS && /Android/.test(t)) || (isAndroid && /iOS/.test(t));
+        });
+        var n = document.getElementById('getNote'); if (n) n.hidden = true;
+    }
+    window.openGetApp = function () {
+        mark();
+        var dlg = document.getElementById('install-dialog');
+        if (dlg && dlg.showModal) dlg.showModal(); else if (dlg) dlg.setAttribute('open', '');
+    };
+    window.installApp = function (fromDialog) {
+        if (deferred) {
+            var dlg = document.getElementById('install-dialog');
+            if (dlg && dlg.open && dlg.close) dlg.close();
+            deferred.prompt();
+            deferred.userChoice.finally(function () { deferred = null; });
+            return;
+        }
+        if (!fromDialog) return window.openGetApp();
+        var n = document.getElementById('getNote'); if (n) n.hidden = false;
+        var s = document.querySelector('.platform-block:not([hidden])'); if (s) s.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+    window.addEventListener('appinstalled', function () {
+        var p = document.getElementById('getPwa'); if (p) p.hidden = true;
+    });
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () { navigator.serviceWorker.register('../sw.js').catch(function () {}); });
+    }
+})();
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var MQ = window.matchMedia('(max-width:820px)');
+  var q = document.getElementById('q');
+
+  if (q) {
+    q.setAttribute('enterkeyhint', 'search');
+    q.setAttribute('autocomplete', 'off');
+    q.setAttribute('autocorrect', 'off');
+    q.setAttribute('autocapitalize', 'off');
+
+    var clr = document.createElement('button');
+    clr.id = 'mClear'; clr.type = 'button'; clr.textContent = '✕';
+    clr.setAttribute('aria-label', 'مسح البحث');
+    (q.parentNode || document.body).appendChild(clr);
+
+    var sync = function () { clr.classList.toggle('on', !!q.value); };
+    q.addEventListener('input', sync);
+    clr.addEventListener('click', function () {
+      q.value = '';
+      q.dispatchEvent(new Event('input', { bubbles: true }));
+      sync(); q.focus();
+    });
+    q.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); if (MQ.matches) q.blur(); }
+    });
+    sync();
+  }
+
+  var up = document.createElement('button');
+  up.id = 'mUp'; up.type = 'button'; up.innerHTML = '↑';
+  up.setAttribute('aria-label', 'العودة إلى أعلى الصفحة');
+  up.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  document.body.appendChild(up);
+
+  var t;
+  window.addEventListener('scroll', function () {
+    if (t) return;
+    t = setTimeout(function () {
+      t = null;
+      document.body.classList.toggle('m-scrolled', (window.scrollY || 0) > 400);
+    }, 140);
+  }, { passive: true });
+})();
+</script>
+
+<script>
+/* «حسب الدور»: تبويبات — يُعرض دور واحد فقط */
+(function () {
+  'use strict';
+  var sec = document.querySelector('.routes-late');
+  if (!sec) return;
+  var grid = sec.querySelector('.r-grid');
+  var routes = [].slice.call(sec.querySelectorAll('.route'));
+  if (!grid || !routes.length) return;
+  var KEY = 'mahalco-role';
+  var bar = document.createElement('div');
+  bar.className = 'role-tabs';
+  bar.setAttribute('role', 'tablist');
+  bar.setAttribute('aria-label', 'اختيار الدور');
+  var tabs = routes.map(function (r, i) {
+    var h = r.querySelector('h3');
+    r.id = r.id || 'role-' + i;
+    r.setAttribute('role', 'tabpanel');
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'role-tab';
+    b.id = 'role-tab-' + i;
+    b.setAttribute('role', 'tab');
+    b.setAttribute('aria-controls', r.id);
+    r.setAttribute('aria-labelledby', b.id);
+    b.textContent = h ? h.textContent.trim() : ('دور ' + (i + 1));
+    b.addEventListener('click', function () { select(i, true); });
+    b.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowLeft' ? 1 : e.key === 'ArrowRight' ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      var n = (i + d + tabs.length) % tabs.length;
+      select(n, true); tabs[n].focus();
+    });
+    bar.appendChild(b);
+    return b;
+  });
+  function select(i, save) {
+    routes.forEach(function (r, k) { r.classList.toggle('on', k === i); });
+    tabs.forEach(function (t, k) {
+      t.setAttribute('aria-selected', k === i ? 'true' : 'false');
+      t.tabIndex = k === i ? 0 : -1;
+    });
+    if (tabs[i].scrollIntoView && bar.scrollWidth > bar.clientWidth) {
+      try { tabs[i].scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch (e) {}
+    }
+    if (save) { try { localStorage.setItem(KEY, String(i)); } catch (e) {} }
+  }
+  grid.parentNode.insertBefore(bar, grid);
+  sec.classList.add('tabbed');
+  var start = 0;
+  try { var s = parseInt(localStorage.getItem(KEY), 10); if (s >= 0 && s < routes.length) start = s; } catch (e) {}
+  select(start, false);
+})();
+</script>
+<script src="https://mahmoudalem95.github.io/mahalco/js/bg-junction.js?v=5" defer></script>
+<script src="../js/visits-bar.js?v=2" defer></script>
+</body>
+</html>
