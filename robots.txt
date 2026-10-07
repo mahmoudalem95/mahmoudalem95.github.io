@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mahmoudalem95.github.io/mahalco/sitemap.xml
