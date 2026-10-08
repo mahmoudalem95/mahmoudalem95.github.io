@@ -1198,6 +1198,16 @@ html[data-glass="on"][data-theme="dark"] .hero :is(a.hq,.hq-dropdown){background
 :root[data-theme="light"] .cad-menu{background:rgba(255,255,255,.97)}
 html[data-glass="on"] .cad-menu{-webkit-backdrop-filter:blur(18px) saturate(180%);backdrop-filter:blur(18px) saturate(180%)}
 
+/* MahAlCad – הורדת האפליקציה למחשב */
+.cad-menu{min-width:270px}
+.cad-menu .cad-all{border-top:1px solid var(--rule-dark);border-radius:0 0 10px 10px;margin-top:6px;padding-top:12px}
+.cad-menu .cad-all b{font-size:13px;font-weight:700}
+.cad-menu .cad-dl.is-you{background:rgba(233,177,47,.10);border-inline-start-color:var(--marking)}
+.cad-menu .cad-ver{align-self:flex-start;font-size:11px;font-weight:600;color:var(--muted-dark);margin-top:2px}
+.cad-menu .cad-dl .cad-you{font-size:11px;font-weight:800;color:var(--marking)}
+:root[data-theme="light"] .cad-menu .cad-dl .cad-you{color:#8a5a00}
+:root[data-theme="light"] .cad-menu a{color:#141A1F}
+
 /* ===== הכלים המבוקשים: «הדרכות» ראשון, חיפוש בסוף וממורכז ===== */
 .hq-list > .hq-search{grid-column:span 2}
 html .hero a.hq.hq-search,html[data-glass][data-theme] .hero a.hq.hq-search{flex-direction:row;align-items:center;justify-content:center;gap:10px;text-align:center;
@@ -1281,6 +1291,24 @@ document.addEventListener('DOMContentLoaded',function(){
     c.addEventListener('click',function(e){e.stopPropagation();set(!sp.classList.contains('open'))});
     document.addEventListener('click',function(e){if(!sp.contains(e.target))set(false)});
     document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+    /* הורדה ישירה: הקבצים מהגרסה האחרונה ב-GitHub Releases (כשאין – דף הגרסאות) */
+    var you=/Mac/i.test(navigator.platform||'')&&!(navigator.maxTouchPoints>1)?'mac':(/Win/i.test(navigator.platform||'')?'win':'');
+    sp.querySelectorAll('.cad-dl').forEach(function(a){if(a.dataset.os===you){a.classList.add('is-you');
+      a.querySelector('small').insertAdjacentHTML('afterbegin','<span class="cad-you">המחשב שלך · </span>');}});
+    var got=false;
+    c.addEventListener('click',function(){if(got)return;got=true;
+      fetch('https://api.github.com/repos/mahmoudalem95/mahalco/releases/latest',{headers:{'Accept':'application/vnd.github+json'}})
+        .then(function(r){return r.ok?r.json():null}).then(function(rel){if(!rel||!rel.assets)return;
+          var pick={mac:/\.dmg$/i,win:/-setup\.exe$/i};
+          sp.querySelectorAll('.cad-dl').forEach(function(a){
+            var as=rel.assets.find(function(x){return pick[a.dataset.os].test(x.name)});if(!as)return;
+            a.href=as.browser_download_url;a.removeAttribute('target');
+            var v=document.createElement('span');v.className='cad-ver';v.dir='ltr';
+            v.textContent=String(rel.tag_name||'').replace(/^mahalcad-/,'')+' · '+Math.round(as.size/1048576)+' MB';
+            a.appendChild(v);
+          });
+        }).catch(function(){});
+    });
   }
   /* סרגל השליטה בצומת – ברירת מחדל מצומצם, נפתח בחץ */
   var K='mh-bgv-fold';
@@ -1332,7 +1360,16 @@ document.addEventListener('DOMContentLoaded',function(){
                 <p>ניתוח צמתים, רמת שירות, בטיחות, תכנון גיאומטרי, תחבורה ציבורית וחניה. כל נוהל זמין להרצה בדפדפן, ואותם נתונים נשלחים <span class="nobr">ל‑API</span> כשהשאלה גדלה לכדי מסדרון או רשת שלמה.</p>
 
                 <div class="hero-actions hero-primary">
-                    <a class="btn btn-solid" href="he/project-hub.html">MahAlCad</a>
+                    <div class="cad-split">
+                        <a class="btn btn-solid cad-main" href="he/project-hub.html">MahAlCad</a>
+                        <button type="button" class="btn btn-solid cad-caret" aria-haspopup="true" aria-expanded="false" aria-controls="cad-menu" aria-label="הורדת MahAlCad למחשב"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="cad-menu" id="cad-menu" role="menu">
+                            <a role="menuitem" href="he/project-hub.html"><small>בדפדפן, בלי התקנה</small><b>פתיחת MahAlCad</b></a>
+                            <a role="menuitem" class="cad-dl" data-os="mac" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>לכל מחשבי ה-Mac</small><b>הורדה ל-Mac</b></a>
+                            <a role="menuitem" class="cad-dl" data-os="win" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>קובץ התקנה למחשב Windows</small><b>הורדה ל-Windows</b></a>
+                            <a role="menuitem" class="cad-all" href="https://github.com/mahmoudalem95/mahalco/releases" target="_blank" rel="noopener"><small>גרסאות קודמות והערות שחרור</small><b>כל הגרסאות</b></a>
+                        </div>
+                    </div>
                     <a class="btn btn-line" href="#catalog">כל הקטלוג</a>
                 </div>
                 <div class="hero-quick">
