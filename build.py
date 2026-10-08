@@ -5,9 +5,7 @@
 
 Pages copied (source in the mahalco repo -> path here):
     index.html      -> index.html      (Hebrew home)
-    ar/index.html   -> ar/index.html   (Arabic home)
     apis-he.html    -> apis-he.html    (forwards to the Hebrew home, as on the site)
-    apis-ar.html    -> apis-ar.html    (forwards to the Arabic home, as on the site)
 
 Each copy gets <base href=".../mahalco/<dir>/"> so every style, script, image and tool link
 keeps loading from the real site. Links between the copied pages stay on the root address.
@@ -20,11 +18,9 @@ import re
 import sys
 
 SITE = "https://mahmoudalem95.github.io/mahalco/"
-PAGES = {"index.html": "index.html", "ar/index.html": "ar/index.html",
-         "apis-he.html": "apis-he.html", "apis-ar.html": "apis-ar.html"}
+PAGES = {"index.html": "index.html", "apis-he.html": "apis-he.html"}
 # where links to the copied pages should point on the root address
-LOCAL = {"index.html": "/", "": "/", "apis-he.html": "/",
-         "ar/index.html": "/ar/", "ar/": "/ar/", "ar": "/ar/", "apis-ar.html": "/ar/"}
+LOCAL = {"index.html": "/", "": "/", "apis-he.html": "/"}
 
 HASH_FIX = ("<script>/* root copy: in-page #links stay on this page despite <base> */"
             "document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^=\"#\"]');"
@@ -59,7 +55,7 @@ def localize(src_path: str, html: str) -> str:
 
     html = ATTR.sub(fix, html)
     # JS redirects in the forwarding pages
-    for t, loc in (("index.html", "/"), ("ar/index.html", "/ar/")):
+    for t, loc in (("index.html", "/"),):
         html = html.replace('location.replace("%s"' % t, 'location.replace("%s"' % loc)
         html = html.replace('url=%s"' % t, 'url=%s"' % loc)
     head = re.search(r'<head[^>]*>', html, re.I)
