@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-<style id="he-font">button,input,select,textarea,optgroup{font-family:inherit}</style>
+<style id="he-font">button,input,select,textarea,optgroup{font-family:inherit}.cad-off{color:var(--muted);opacity:.6;cursor:default}
+</style>
     <meta name="google-adsense-account" content="ca-pub-2151829492004511">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2151829492004511"
@@ -1359,10 +1360,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
                 <div class="hero-actions hero-primary">
                     <div class="cad-split">
-                        <a class="btn btn-solid cad-main" href="he/project-hub.html">MahAlCad</a>
+                        <a class="btn btn-solid cad-main" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener">MahAlCad</a>
                         <button type="button" class="btn btn-solid cad-caret" aria-haspopup="true" aria-expanded="false" aria-controls="cad-menu" aria-label="הורדת MahAlCad למחשב"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
                         <div class="cad-menu" id="cad-menu" role="menu">
-                            <a role="menuitem" href="he/project-hub.html"><small>בדפדפן, בלי התקנה</small><b>פתיחת MahAlCad</b></a>
                             <a role="menuitem" class="cad-dl" data-os="mac" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>לכל מחשבי ה-Mac</small><b>הורדה ל-Mac</b></a>
                             <a role="menuitem" class="cad-dl" data-os="win" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>קובץ התקנה למחשב Windows</small><b>הורדה ל-Windows</b></a>
                             <a role="menuitem" class="cad-all" href="https://github.com/mahmoudalem95/mahalco/releases" target="_blank" rel="noopener"><small>גרסאות קודמות והערות שחרור</small><b>כל הגרסאות</b></a>
@@ -1418,11 +1418,6 @@ document.addEventListener('DOMContentLoaded',function(){
                 <em>מחשבון חניה</em>
                 <b>תקן חניה לפי שם היישוב</b>
                 <span>מקלידים שם עיר או יישוב; הכלי קובע לבד סוג יישוב, מצב מתע״ן ומחוז — במקום לבחור ידנית באיזה אזור אתם.</span>
-            </a>
-            <a class="fresh" href="he/project-hub.html#sd">
-                <em>משולשי ראות</em>
-                <b>מדריך מודרך בתוך הכלי</b>
-                <span>תשעה צעדים שמסמנים את עצמם: רקע, כיול, סימון הציר והזרועות, ועד גיליון A0 להדפסה בקנה מידה.</span>
             </a>
                 </div>
             </details>
@@ -1531,7 +1526,7 @@ document.addEventListener('DOMContentLoaded',function(){
                             <a class="leaf" href="he/typical-section.html"><h3>חתך רוחב עירוני</h3><p>רוחבי נתיב, אבן שפה, מדרכה ושוליים לרחוב מקומי, מאסף ועורק.</p><span class="std">AASHTO Green Book</span></a>
                             <a class="leaf leaf-temp" href="he/temporary-section.html"><h3>חתך זמני – הסדרי תנועה באתר עבודה</h3><p>תת-קטגוריה של חתך הרוחב: בוחרים תרשים מספר ההנחיות, סוגרים נתיבים ובודקים רוחבי מעבר, רצועת התקנים ומעבר הולכי רגל זמני.</p><span class="std">הסדרי תנועה זמניים 2020</span></a>
                             <a class="leaf" href="he/calculator-dark-ui.html"><h3>ערכי תכן לפי ההנחיות הישראליות</h3><p>רוחבי נתיבים, רדיוסי פנייה, נתיבי האטה והאצה, מפרצי אוטובוס והסדרי תנועה זמניים – ישר מספרי ההנחיות.</p><span class="std">הנחיות לתכנון רחובות בערים</span></a>
-                            <a class="leaf" href="he/project-hub.html#sd"><h3>משולשי ראות ע״ג תכנית</h3><p>מסמנים צומת על גבי תכנית מכוילת ומפיקים גיליון A0 בקנה מידה.</p><span class="std">תנועה בצמתים 2020</span></a>
+                            <div class="soon"><h3>משולשי ראות ע״ג תכנית</h3><p>מסמנים צומת על גבי תכנית מכוילת ומפיקים גיליון A0 בקנה מידה.</p><span class="std">תנועה בצמתים 2020</span></div>
                             <div class="soon"><h3>הנחיות לבחירה ולהצבה של התקני בטיחות</h3><p>בחירת התקן בטיחות והצבתו ברחוב עירוני – מעקות, מעבירים וכריות בלימה, לפי ספר ההנחיות.</p><span class="std"><a href="https://www.gov.il/BlobFolder/guide/design_traffic_devices/he/Traffic_and_safety_devices_Committee_publications_2005_HetkenetBetihut0905.pdf" target="_blank" rel="noopener" style="color:inherit">הנחיות לבחירה ולהצבה של התקני בטיחות 2005</a></span></div>
                         </div>
                     </details>
@@ -1675,7 +1670,7 @@ document.addEventListener('DOMContentLoaded',function(){
                         <ul>
                             <li><a href="he/parking-regulations.html">תקן חניה לפי תקנות 2016</a></li>
                             <li><a href="he/typical-section.html">חתך רוחב טיפוסי</a></li>
-                            <li><a href="he/project-hub.html#sd">משולשי ראות על גבי התכנית</a></li>
+                            <li><span class="cad-off">משולשי ראות על גבי התכנית</span></li>
                             <li><a href="he/traffic-impact.html">בדיקת השפעת תנועה</a></li>
                         </ul>
                     </div>
@@ -1698,7 +1693,7 @@ document.addEventListener('DOMContentLoaded',function(){
                         <span class="who2">עבודה על גבי תכנית, קנה מידה, גיליונות</span>
                         <p>העבודה מתחילה מתמונה או תכנית: מכיילים לפי קטע במידה ידועה, מסמנים על גבי הרקע, ומייצאים גיליון A0 בקנה מידה אמיתי, SVG או JSON.</p>
                         <ul>
-                            <li><a href="he/project-hub.html#sd">מרחקי ראות מתוך תכנית מכוילת</a></li>
+                            <li><span class="cad-off">מרחקי ראות מתוך תכנית מכוילת</span></li>
                             <li><a href="he/horizontal.html">תוואי אופקי ועקומות מעבר</a></li>
                             <li><a href="he/vertical.html">תוואי אנכי ושיפועים</a></li>
                             <li><a href="he/typical-section.html">חתכים טיפוסיים לשרטוט</a></li>
@@ -1766,7 +1761,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 <h3>ממשולשי ראות לגיליון A0 חתום</h3>
                 <p>הקלט הוא תצלום או תכנית. הפלט הוא שרטוט מרחקי ראות בקנה מידה, מוכן להדפסה ולצירוף לתיק.</p>
                 <ol class="steps2">
-                    <li><b>רקע וכיול</b><span>טוענים תמונה ב<a href="he/project-hub.html#sd">כלי משולשי הראות</a> ומכיילים לפי קטע שאורכו ידוע.</span></li>
+                    <li><b>רקע וכיול</b><span>טוענים תמונה ב<span class="cad-off">כלי משולשי הראות</span> ומכיילים לפי קטע שאורכו ידוע.</span></li>
                     <li><b>נתוני התכן</b><span>עירוני או בין-עירוני, מהירות הדרך הראשית, מספר המסלולים והמרחק לאבן השפה.</span></li>
                     <li><b>סימון</b><span>מסמנים את ציר הדרך — 4–8 נקודות בציר מעוקל — ואת הזרועות, כולל קו העצירה בפועל.</span></li>
                     <li><b>ייצוא</b><span>גיליון A0 בקנה מידה 1:500 / 1:1000 / 1:2000, או PNG, SVG ו‑JSON להמשך עבודה.</span></li>
@@ -1782,7 +1777,7 @@ document.addEventListener('DOMContentLoaded',function(){
                     <a href="he/critical-lane-volume.html">נפח קריטי</a><i>←</i>
                     <a href="he/optimizes-signal-timing-plans-metric.html">תזמון רמזור</a><i>←</i>
                     <a href="he/lane-queue-metric.html">אורכי תור</a><i>←</i>
-                    <a href="he/project-hub.html#sd">מרחקי ראות</a><i>←</i>
+                    <span class="cad-off">מרחקי ראות</span><i>←</i>
                     <a href="he/parking-regulations.html">תקן חניה</a>
                 </div>
                 <ul>
@@ -1831,8 +1826,8 @@ document.addEventListener('DOMContentLoaded',function(){
                 <section>
                     <h3>ראות, גיאומטריה וחתכים</h3>
                     <ul>
-                        <li><a href="he/project-hub.html#sd"><b>משולש ראות</b> בצומת — איך מסמנים</a></li>
-                        <li><a href="he/project-hub.html#sd">חישוב <b>מרחק ראות</b> לעצירה ולהצטלבות</a></li>
+                        <li><span class="cad-off"><b>משולש ראות</b> בצומת — איך מסמנים</span></li>
+                        <li><span class="cad-off">חישוב <b>מרחק ראות</b> לעצירה ולהצטלבות</span></li>
                         <li><a href="he/typical-section.html"><b>חתך טיפוסי</b> לרחוב עירוני ולדרך</a></li>
                         <li><a href="he/horizontal.html">רדיוס מינימלי ו<b>עקומת מעבר</b></a></li>
                         <li><a href="he/vertical.html"><b>שיפוע אורכי</b> ועקומה אנכית</a></li>
@@ -1867,9 +1862,9 @@ document.addEventListener('DOMContentLoaded',function(){
                 <section>
                     <h3>מדידה, מיפוי ותכניות</h3>
                     <ul>
-                        <li><a href="he/project-hub.html#sd"><b>כיול תמונה</b> לקנה מידה אמיתי</a></li>
-                        <li><a href="he/project-hub.html#sd">שרטוט על <b>תצלום אוויר</b> וייצוא SVG</a></li>
-                        <li><a href="he/project-hub.html#sd">הפקת <b>גיליון A0</b> בקנה מידה 1:500</a></li>
+                        <li><span class="cad-off"><b>כיול תמונה</b> לקנה מידה אמיתי</span></li>
+                        <li><span class="cad-off">שרטוט על <b>תצלום אוויר</b> וייצוא SVG</span></li>
+                        <li><span class="cad-off">הפקת <b>גיליון A0</b> בקנה מידה 1:500</span></li>
                         <li><a href="he/typical-section.html">חתך לרוחב ל<b>תכנית פיתוח</b></a></li>
                         <li><span style="opacity:.5;cursor:default">תכנון <b>דרך בין-עירונית</b> — ערכי תכן</span></li>
                     </ul>
@@ -1995,7 +1990,6 @@ document.addEventListener('DOMContentLoaded',function(){
                 <a href="#catalog">קטלוג</a>
                 <a href="he/critical-lane-volume.html">רמת שירות ונפח קריטי</a>
                 <a href="he/parking-regulations.html">תקן חניה</a>
-                <a href="he/project-hub.html#sd">משולשי ראות</a>
                 <a href="he/worklog.html">יומן עבודה</a>
                 <a href="/">דף הבית</a>
                 <a href="en/index.html">English</a>
