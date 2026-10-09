@@ -1291,14 +1291,14 @@ document.addEventListener('DOMContentLoaded',function(){
     document.addEventListener('click',function(e){if(!sp.contains(e.target))set(false)});
     document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
     /* הורדה ישירה: הקבצים מהגרסה האחרונה ב-GitHub Releases (כשאין – דף הגרסאות) */
-    var you=/Mac/i.test(navigator.platform||'')&&!(navigator.maxTouchPoints>1)?'mac':(/Win/i.test(navigator.platform||'')?'win':'');
+    var you=/Android/i.test(navigator.userAgent||'')?'android':/Mac/i.test(navigator.platform||'')&&!(navigator.maxTouchPoints>1)?'mac':(/Win/i.test(navigator.platform||'')?'win':'');
     sp.querySelectorAll('.cad-dl').forEach(function(a){if(a.dataset.os===you){a.classList.add('is-you');
-      a.querySelector('small').insertAdjacentHTML('afterbegin','<span class="cad-you">המחשב שלך · </span>');}});
+      a.querySelector('small').insertAdjacentHTML('afterbegin','<span class="cad-you">'+(you==='android'?'המכשיר שלך':'המחשב שלך')+' · </span>');}});
     var got=false;
     c.addEventListener('click',function(){if(got)return;got=true;
       fetch('https://api.github.com/repos/mahmoudalem95/mahalco/releases/latest',{headers:{'Accept':'application/vnd.github+json'}})
         .then(function(r){return r.ok?r.json():null}).then(function(rel){if(!rel||!rel.assets)return;
-          var pick={mac:/\.dmg$/i,win:/-setup\.exe$/i};
+          var pick={mac:/\.dmg$/i,win:/-setup\.exe$/i,android:/\.apk$/i};
           sp.querySelectorAll('.cad-dl').forEach(function(a){
             var as=rel.assets.find(function(x){return pick[a.dataset.os].test(x.name)});if(!as)return;
             a.href=as.browser_download_url;a.removeAttribute('target');
@@ -1360,10 +1360,11 @@ document.addEventListener('DOMContentLoaded',function(){
                 <div class="hero-actions hero-primary">
                     <div class="cad-split">
                         <a class="btn btn-solid cad-main" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener">MahAlCad</a>
-                        <button type="button" class="btn btn-solid cad-caret" aria-haspopup="true" aria-expanded="false" aria-controls="cad-menu" aria-label="הורדת MahAlCad למחשב"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <button type="button" class="btn btn-solid cad-caret" aria-haspopup="true" aria-expanded="false" aria-controls="cad-menu" aria-label="הורדת MahAlCad למחשב ולטאבלט"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
                         <div class="cad-menu" id="cad-menu" role="menu">
                             <a role="menuitem" class="cad-dl" data-os="mac" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>לכל מחשבי ה-Mac</small><b>הורדה ל-Mac</b></a>
                             <a role="menuitem" class="cad-dl" data-os="win" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>קובץ התקנה למחשב Windows</small><b>הורדה ל-Windows</b></a>
+                            <a role="menuitem" class="cad-dl" data-os="android" href="https://github.com/mahmoudalem95/mahalco/releases/latest" target="_blank" rel="noopener"><small>קובץ APK לטאבלט Android</small><b>הורדה ל-Android</b></a>
                             <a role="menuitem" class="cad-all" href="https://github.com/mahmoudalem95/mahalco/releases" target="_blank" rel="noopener"><small>גרסאות קודמות והערות שחרור</small><b>כל הגרסאות</b></a>
                         </div>
                     </div>
