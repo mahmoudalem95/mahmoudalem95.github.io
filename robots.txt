@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-# broken draft page, not a tool yet
-Disallow: /mahalco/en/bca.html
-
-Sitemap: https://mahmoudalem95.github.io/mahalco/sitemap.xml
-Sitemap: https://mahmoudalem95.github.io/mahalco/sitemap.txt
